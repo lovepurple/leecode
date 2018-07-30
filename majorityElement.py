@@ -59,10 +59,18 @@ class majority_element:
                 return nums[i]
         return 0
 
+    # sum()函数可以对整个list操作(参考写法就行了)
+    def majorityElementSolution2(self, nums):
+        appearTimes = len(nums) // 2
+        for i in nums:
+            element_count = sum(1
+                                for ele in nums if ele == nums)
+            if element_count > appearTimes:
+                return i
 
 
 calculator = majority_element()
-result = calculator.majorityElement([2, 2, 1, 1, 1, 2, 2])
+result = calculator.majorityElement([3, 2, 3])
 # result = calculator.majorityElement([3, 2, 3])
 # result = calculator.majorityElement([2, 2])
 print(result)
