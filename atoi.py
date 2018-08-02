@@ -48,17 +48,67 @@
 class atoi:
     def myAtoi(self, str):
         sign = 1
-        placeNumberList = []
+        placenumberlist = []
+        hasinitialsign = False
+
         for ch in str:
-            if ch >= '0' and ch <= '9':
-                placeNumberList.append(ord(ch) - 48)
+            if len(placenumberlist) > 0:
+                if self.isFigure(ch):
+                    placenumberlist.append(ord(ch) - 48)
+                else:
+                    break
+            else:
+                if self.isWhiteSpace(ch):
+                    if hasinitialsign:
+                        return 0
+                    else:
+                        continue
+
+                if self.isFigure(ch):
+                    hasinitialsign = True
+                    placenumberlist.append(ord(ch) - 48)
+                else:
+                    if not hasinitialsign:
+                        if ch == '+':
+                            hasinitialsign = True
+                            sign = 1
+                        elif ch == '-':
+                            hasinitialsign = True
+                            sign = -1
+                        else:
+                            break
+                    else:
+                        break
+
+        num = 0
+        for i in range(len(placenumberlist)):
+            num += placenumberlist[i] * pow(10, len(placenumberlist) - i - 1)
+
+        num *= sign
+        num = self.checkOverFlow(num)
+        return num
+
+    def isWhiteSpace(self, char):
+        return char == ' '
+
+    def checkOverFlow(self, num):
+        if num < ~(1 << 31) + 1:
+            return ~(1 << 31) + 1
+        elif num > (1 << 31) - 1:
+            return (1 << 31) - 1
+        else:
+            return num
+
+    def isFigure(self, ch):
+        return ch >= '0' and ch <= '9'
 
 
-    def isSign(self, char):
-        return char == '-' or char == '+'
-
-    def isOverflowInteger(self, num):
-        return False if num > ~(1 << 31) and num < (1 << 31) else True
-
-
-print(ord('0'))
+instance = atoi()
+str = "   -42"
+print(instance.myAtoi(str))
+str = "    +0 123"
+print(instance.myAtoi(str))
+str = "words and 987"
+print(instance.myAtoi(str))
+str = "+-2"
+print(instance.myAtoi(str))
