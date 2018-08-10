@@ -8,6 +8,8 @@
     words = ["a", "bb", "acd", "ace"]
     Output: 3
     Explanation: There are three words in words that are a subsequence of S: "a", "acd", "ace".
+
+    Note:distinct问题
 """
 
 
