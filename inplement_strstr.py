@@ -16,22 +16,40 @@
 
 
 class implement_strstr:
-    def strStr(self, hayStack, needle):
+    def strStr(self, haystack, needle):
 
-        indexOfSubStr = 0
+        # 0 是任何串的子串
+        if len(needle) == 0:
+            return 0
 
-        for i in range(len(needle)):
-            indexOfChar = self.indexOfChar(haystack,needle[i])
+        if len(haystack) < len(needle):
+            return -1
 
-            if indexOfChar == -1:
-                return -1
+        currentIndex = 0
+        while currentIndex != -1 or currentIndex < len(haystack):
+            currentIndex = self.indexOfChar(haystack, needle[0], currentIndex)
 
+            if currentIndex != -1:
+                for i in range(len(needle)):
+                    chNeedle = needle[i]
+                    if i + currentIndex >= len(haystack):
+                        return -1
 
+                    chInHayStack = haystack[i + currentIndex]
 
+                    if chNeedle != chInHayStack:
+                        currentIndex +=1
+                        break
+                    else:
+                        if i == len(needle) - 1:
+                            return currentIndex
+            else:
+                break
 
+        return currentIndex
 
-    def indexOfChar(self, str, char,startIndex = 0):
-        for i in range(startIndex,len(str)):
+    def indexOfChar(self, str, char, startIndex=0):
+        for i in range(startIndex, len(str)):
             ch = str[i]
             if ch == char:
                 return i
@@ -39,6 +57,8 @@ class implement_strstr:
         return -1
 
 
-haystack = ""
-needle=""
-print(haystack.index(needle))
+haystack = "mississippi"
+needle = "issip"
+
+instance = implement_strstr()
+print(instance.strStr(haystack, needle))
