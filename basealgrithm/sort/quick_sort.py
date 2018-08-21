@@ -21,14 +21,14 @@ class quick_sort:
         :rtype:List
         """
         # 递归退出条件,只有一个元素或right 比left小时
-        if right - left <= 1:
+        if right - left < 1:    #note: 2018-8-21 20:19:12
             return num
 
         i = left + 1
         j = right
         pivot = left
 
-        while i <= j:  # 注意这里的条件
+        while i < j:  # 注意这里的条件 2018-8-21 20:18:57 note: 条件是 j<=i  所以while条件是 i<j
             # shift the right
             while num[j] > num[pivot]:
                 j -= 1
@@ -61,5 +61,6 @@ class quick_sort:
 
 sortinstance = quick_sort()
 nums = [5, 28, 19, 4, 5, 5, 46, 8, 45, 7, 29, 42, 50, 25, 7, 22, 27, 18, 14]
+
 
 print(sortinstance.quicksort(nums, 0, len(nums) - 1))
