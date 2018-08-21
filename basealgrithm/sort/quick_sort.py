@@ -28,9 +28,9 @@ class quick_sort:
         j = right
         pivot = left
 
-        while i < j:  # 注意这里的条件 2018-8-21 20:18:57 note: 条件是 j<=i  所以while条件是 i<j
+        while i <= j:  # 注意这里的条件 2018-8-21 20:18:57 note:
             # shift the right
-            while j > left and num[j] > num[pivot]:
+            while j >= left and num[j] > num[pivot]:
                 j -= 1
 
             # shift the left
@@ -62,5 +62,6 @@ class quick_sort:
 sortinstance = quick_sort()
 nums = [5, 28, 19, 4, 5, 5, 46, 8, 45, 7, 29, 42, 50, 25, 7, 22, 27, 18, 14]
 nums = [3, 1, 2]
+#nums=[1,2]
 
 print(sortinstance.quicksort(nums, 0, len(nums) - 1))
