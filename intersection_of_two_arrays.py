@@ -55,10 +55,10 @@ class intersection_of_two_arrays:
         pivot = left
 
         while i <= j:
-            while j>= left and nums[pivot] < nums[j]:
+            while j >= left and nums[pivot] < nums[j]:
                 j -= 1
 
-            while i<=right and nums[pivot] > nums[i] :
+            while i <= right and nums[pivot] > nums[i]:
                 i += 1
 
             if i <= j:
@@ -89,9 +89,9 @@ num1 = [1, 2, 2, 1]
 num2 = [2, 2]
 num1 = [4, 9, 5]
 num2 = [9, 4, 9, 8, 4]
-num1=[3,1,2]
-num2=[1]
-num1=[1]
-num2=[1,2]
+num1 = [3, 1, 2]
+num2 = [1]
+num1 = [1]
+num2 = [1, 2]
 
 print(instance.intersect(num1, num2))
