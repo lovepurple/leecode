@@ -34,7 +34,7 @@ class search_insert_position:
     def findPosition(self, nums, target, left, right):
         # 二分
         if right - left <= 0:
-            if nums[right] >= target:           #细想一下 位置问题
+            if nums[right] >= target:           #细想一下 位置问题 把第二超了 自己是第二
                 return right
             elif nums[right] < target:
                 return right + 1
