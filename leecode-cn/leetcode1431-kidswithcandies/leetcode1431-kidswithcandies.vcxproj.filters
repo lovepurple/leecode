@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="QuickSort.cpp">
+    <ClCompile Include="kidsWithCandies.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

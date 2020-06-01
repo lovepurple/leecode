@@ -76,3 +76,7 @@ int partition(int* arr, int low, int high)
 
 	return -1;
 }
+
+void PrintArr(int* arr, int arrLength)
+{
+}

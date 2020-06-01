@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{b7605a19-b9a8-46f7-bda9-e043c34349f3}</ProjectGuid>
-    <RootNamespace>QuickSort3waypartition</RootNamespace>
+    <ProjectGuid>{ad1dc9b2-3b85-41a8-8115-73fe40617905}</ProjectGuid>
+    <RootNamespace>leetcode1431kidswithcandies</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -139,7 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="QuickSort.cpp" />
+    <ClCompile Include="kidsWithCandies.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
