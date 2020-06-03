@@ -31,6 +31,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Middle", "Middle", "{78CD28
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Leetcode64-sumNums", "Leetcode64-sumNums\Leetcode64-sumNums.vcxproj", "{DE81EA78-D6B4-439E-9455-3188F903D068}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "leetcode54-spiralOrder", "leetcode54-spiralOrder\leetcode54-spiralOrder.vcxproj", "{B110D26F-65AB-404F-A5C6-568C9662C525}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -119,6 +121,14 @@ Global
 		{DE81EA78-D6B4-439E-9455-3188F903D068}.Release|x64.Build.0 = Release|x64
 		{DE81EA78-D6B4-439E-9455-3188F903D068}.Release|x86.ActiveCfg = Release|Win32
 		{DE81EA78-D6B4-439E-9455-3188F903D068}.Release|x86.Build.0 = Release|Win32
+		{B110D26F-65AB-404F-A5C6-568C9662C525}.Debug|x64.ActiveCfg = Debug|x64
+		{B110D26F-65AB-404F-A5C6-568C9662C525}.Debug|x64.Build.0 = Debug|x64
+		{B110D26F-65AB-404F-A5C6-568C9662C525}.Debug|x86.ActiveCfg = Debug|Win32
+		{B110D26F-65AB-404F-A5C6-568C9662C525}.Debug|x86.Build.0 = Debug|Win32
+		{B110D26F-65AB-404F-A5C6-568C9662C525}.Release|x64.ActiveCfg = Release|x64
+		{B110D26F-65AB-404F-A5C6-568C9662C525}.Release|x64.Build.0 = Release|x64
+		{B110D26F-65AB-404F-A5C6-568C9662C525}.Release|x86.ActiveCfg = Release|Win32
+		{B110D26F-65AB-404F-A5C6-568C9662C525}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -133,6 +143,7 @@ Global
 		{196F81F2-6D7E-4516-970E-42CF641491B9} = {AE52A779-C165-4FD8-9BDA-EF49D37E5B1F}
 		{78CD2893-5F2F-46EB-AD26-B441A1EEF36E} = {E5F280A2-9AF3-41F7-8898-F8E4C585FA93}
 		{DE81EA78-D6B4-439E-9455-3188F903D068} = {78CD2893-5F2F-46EB-AD26-B441A1EEF36E}
+		{B110D26F-65AB-404F-A5C6-568C9662C525} = {78CD2893-5F2F-46EB-AD26-B441A1EEF36E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1B46ABCB-2337-4B76-AC80-FB005083CB16}
