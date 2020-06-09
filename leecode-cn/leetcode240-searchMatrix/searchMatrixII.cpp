@@ -26,46 +26,32 @@ Solution::~Solution()
 bool Solution::searchMatrixII(vector<vector<int>>& matrix, int target)
 {
 	int rows = matrix.size();
-	if (rows == 0)
-		return false;
+	int cols = matrix.begin()->size();
 
-	//二次二分？
-	int upRowIndex = 0;
-	int downRowIndex = (rows - 1);
+	int stepRow = rows / 2;
+	int stepCol = cols / 2;
 
-	//二分查找的这里是<=更方便
-	while (upRowIndex <= downRowIndex)
+	for (int i = 0; i < rows; i += stepRow + 1)
 	{
-		int midIndex = upRowIndex + (downRowIndex - upRowIndex) / 2;
-
-		vector<int> rowDatas = matrix[midIndex];
-		int rowSize = rowDatas.size();
-		if (rowDatas[0] > target)
-			downRowIndex = midIndex - 1;
-		else if (rowDatas[rowSize - 1] < target)
-			upRowIndex = midIndex ddd+ 1;
-		else
+		for (int j = 0; j < cols; j += stepCol + 1)
 		{
-			//再次二分
-			int l = 0;
-			int r = rowSize - 1;
+			if (i >= rows || j >= cols)
+				return false;
 
-			while (l <= r)
+			int blockMin = matrix[i][j];
+			int blockMax = matrix[i + stepRow][j + stepRow];
+
+			if (target >= blockMin && target <= blockMax)
 			{
-				int mid = l + (r - l) / 2;
-				if (rowDatas[mid] > target)
-					r = mid - 1;
-				else if (rowDatas[mid] < target)
-					l = mid + 1;
-				else
-					return true;
+				cout << i;
+				cout << j;
+
 			}
-
-
-
-			return false;
 		}
+
 	}
+
+
 
 	return false;
 }
@@ -83,7 +69,7 @@ int main()
 	};
 
 	Solution solution;
-	int target = 5;
+	int target = 25;
 	cout << solution.searchMatrixII(matrix, target);
 
 	return 0;

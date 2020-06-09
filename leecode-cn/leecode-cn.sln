@@ -43,7 +43,11 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "leetcode07-rotatematrix", "
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "leetcode74-searchMatrix", "leetcode74-searchMatrix\leetcode74-searchMatrix.vcxproj", "{11B9CEE7-94AC-4B9B-9720-E3E3FB4B9242}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "leetcode240-searchMatrix", "leetcode240-searchMatrix\leetcode240-searchMatrix.vcxproj", "{067AA8D4-5940-4A4A-95D0-77F0D1FF794D}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "leetcode240-searchMatrixII", "leetcode240-searchMatrix\leetcode240-searchMatrix.vcxproj", "{067AA8D4-5940-4A4A-95D0-77F0D1FF794D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "leetcode900-equationsPossible", "leetcode900-equationsPossible\leetcode900-equationsPossible.vcxproj", "{2782C2CF-062F-40E2-BAEB-4D4FEBB5B073}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "leetcode150-evalRPN", "leetcode150-evalRPN\leetcode150-evalRPN.vcxproj", "{A6B81C64-23D0-4024-BD8E-87B260C9FF33}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -181,6 +185,22 @@ Global
 		{067AA8D4-5940-4A4A-95D0-77F0D1FF794D}.Release|x64.Build.0 = Release|x64
 		{067AA8D4-5940-4A4A-95D0-77F0D1FF794D}.Release|x86.ActiveCfg = Release|Win32
 		{067AA8D4-5940-4A4A-95D0-77F0D1FF794D}.Release|x86.Build.0 = Release|Win32
+		{2782C2CF-062F-40E2-BAEB-4D4FEBB5B073}.Debug|x64.ActiveCfg = Debug|x64
+		{2782C2CF-062F-40E2-BAEB-4D4FEBB5B073}.Debug|x64.Build.0 = Debug|x64
+		{2782C2CF-062F-40E2-BAEB-4D4FEBB5B073}.Debug|x86.ActiveCfg = Debug|Win32
+		{2782C2CF-062F-40E2-BAEB-4D4FEBB5B073}.Debug|x86.Build.0 = Debug|Win32
+		{2782C2CF-062F-40E2-BAEB-4D4FEBB5B073}.Release|x64.ActiveCfg = Release|x64
+		{2782C2CF-062F-40E2-BAEB-4D4FEBB5B073}.Release|x64.Build.0 = Release|x64
+		{2782C2CF-062F-40E2-BAEB-4D4FEBB5B073}.Release|x86.ActiveCfg = Release|Win32
+		{2782C2CF-062F-40E2-BAEB-4D4FEBB5B073}.Release|x86.Build.0 = Release|Win32
+		{A6B81C64-23D0-4024-BD8E-87B260C9FF33}.Debug|x64.ActiveCfg = Debug|x64
+		{A6B81C64-23D0-4024-BD8E-87B260C9FF33}.Debug|x64.Build.0 = Debug|x64
+		{A6B81C64-23D0-4024-BD8E-87B260C9FF33}.Debug|x86.ActiveCfg = Debug|Win32
+		{A6B81C64-23D0-4024-BD8E-87B260C9FF33}.Debug|x86.Build.0 = Debug|Win32
+		{A6B81C64-23D0-4024-BD8E-87B260C9FF33}.Release|x64.ActiveCfg = Release|x64
+		{A6B81C64-23D0-4024-BD8E-87B260C9FF33}.Release|x64.Build.0 = Release|x64
+		{A6B81C64-23D0-4024-BD8E-87B260C9FF33}.Release|x86.ActiveCfg = Release|Win32
+		{A6B81C64-23D0-4024-BD8E-87B260C9FF33}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -201,6 +221,8 @@ Global
 		{148616F0-544E-4084-81D6-A397CB290160} = {78CD2893-5F2F-46EB-AD26-B441A1EEF36E}
 		{11B9CEE7-94AC-4B9B-9720-E3E3FB4B9242} = {78CD2893-5F2F-46EB-AD26-B441A1EEF36E}
 		{067AA8D4-5940-4A4A-95D0-77F0D1FF794D} = {78CD2893-5F2F-46EB-AD26-B441A1EEF36E}
+		{2782C2CF-062F-40E2-BAEB-4D4FEBB5B073} = {78CD2893-5F2F-46EB-AD26-B441A1EEF36E}
+		{A6B81C64-23D0-4024-BD8E-87B260C9FF33} = {78CD2893-5F2F-46EB-AD26-B441A1EEF36E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1B46ABCB-2337-4B76-AC80-FB005083CB16}
