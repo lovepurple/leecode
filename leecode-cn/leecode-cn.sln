@@ -49,6 +49,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "leetcode900-equationsPossib
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "leetcode150-evalRPN", "leetcode150-evalRPN\leetcode150-evalRPN.vcxproj", "{A6B81C64-23D0-4024-BD8E-87B260C9FF33}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataStructure", "DataStructure", "{C67021A7-EEC6-4E5C-B0C1-2D3A8EE9ECA5}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "rotateTree", "rotateTree\rotateTree.vcxproj", "{ADB81259-FE74-41AC-964D-124E77EEDEE8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -201,6 +205,14 @@ Global
 		{A6B81C64-23D0-4024-BD8E-87B260C9FF33}.Release|x64.Build.0 = Release|x64
 		{A6B81C64-23D0-4024-BD8E-87B260C9FF33}.Release|x86.ActiveCfg = Release|Win32
 		{A6B81C64-23D0-4024-BD8E-87B260C9FF33}.Release|x86.Build.0 = Release|Win32
+		{ADB81259-FE74-41AC-964D-124E77EEDEE8}.Debug|x64.ActiveCfg = Debug|x64
+		{ADB81259-FE74-41AC-964D-124E77EEDEE8}.Debug|x64.Build.0 = Debug|x64
+		{ADB81259-FE74-41AC-964D-124E77EEDEE8}.Debug|x86.ActiveCfg = Debug|Win32
+		{ADB81259-FE74-41AC-964D-124E77EEDEE8}.Debug|x86.Build.0 = Debug|Win32
+		{ADB81259-FE74-41AC-964D-124E77EEDEE8}.Release|x64.ActiveCfg = Release|x64
+		{ADB81259-FE74-41AC-964D-124E77EEDEE8}.Release|x64.Build.0 = Release|x64
+		{ADB81259-FE74-41AC-964D-124E77EEDEE8}.Release|x86.ActiveCfg = Release|Win32
+		{ADB81259-FE74-41AC-964D-124E77EEDEE8}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -223,6 +235,7 @@ Global
 		{067AA8D4-5940-4A4A-95D0-77F0D1FF794D} = {78CD2893-5F2F-46EB-AD26-B441A1EEF36E}
 		{2782C2CF-062F-40E2-BAEB-4D4FEBB5B073} = {78CD2893-5F2F-46EB-AD26-B441A1EEF36E}
 		{A6B81C64-23D0-4024-BD8E-87B260C9FF33} = {78CD2893-5F2F-46EB-AD26-B441A1EEF36E}
+		{ADB81259-FE74-41AC-964D-124E77EEDEE8} = {C67021A7-EEC6-4E5C-B0C1-2D3A8EE9ECA5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1B46ABCB-2337-4B76-AC80-FB005083CB16}
