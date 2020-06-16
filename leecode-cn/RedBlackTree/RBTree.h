@@ -1,5 +1,6 @@
 #pragma once
 #include "TreePrinter.h"
+#include <vector>
 
 enum class E_RBTreeNodeType
 {
@@ -34,12 +35,23 @@ public:
 
 	RBTreeNode* search(int findValue);
 
+	RBTree(std::vector<int>& arrays);
 
 
 
 private:
+	/// <summary>
+	/// 节点左旋
+	/// </summary>
+	/// <param name="pRotateNode"></param>
+	/// <returns></returns>
 	RBTreeNode* leftRotate(RBTreeNode* pRotateNode);
 
+	/// <summary>
+	/// 节点右旋
+	/// </summary>
+	/// <param name="pRotateNode"></param>
+	/// <returns></returns>
 	RBTreeNode* rightRoate(RBTreeNode* pRotateNode);
 
 	RBTreeNode* pRootNode;
