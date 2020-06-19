@@ -46,6 +46,20 @@ public:
 
 	TreeNode* deserialize(string data);
 
+	/// <summary>
+	/// 递归序列化二叉树
+	/// </summary>
+	/// <param name="root"></param>
+	/// <returns></returns>
+	string serializeRecursive(TreeNode* root);
+
+	/// <summary>
+	/// 递归反序列化二叉树
+	/// </summary>
+	/// <param name="strData"></param>
+	/// <returns></returns>
+	TreeNode* deserializeRecursive(string strData);
+
 	vector<string> splitSerialzeStr(string serializedData, vector<string>& out);
 
 private:
@@ -57,6 +71,8 @@ private:
 	int getNodeCountByDepth(int fullBinaryTreeDepth);
 
 	int getDepthByIndex(int index);
+
+	TreeNode* deserializeNodeRecursive(queue<string>& nodeValueQueue);
 
 
 };
@@ -168,7 +184,7 @@ TreeNode* Codec::deserialize(string data)
 			{
 				string strNodeValue = nodeVec[currentIndex];
 				TreeNode* pTreeNode = nullptr;
-				if (strNodeValue != "null")
+				if (strNodeValue != "NULL")
 					pTreeNode = new TreeNode(stoi(strNodeValue));
 
 				currentDepthNodeQueue.push(pTreeNode);
@@ -196,6 +212,25 @@ TreeNode* Codec::deserialize(string data)
 	return pRootNode;
 }
 
+/*
+	理解：
+		广度优先的递归
+
+*/
+string Codec::serializeRecursive(TreeNode* pNode)
+{
+	if (pNode == nullptr)
+		return "NULL,";
+
+	string strSerializedData = to_string(pNode->val) + ",";
+
+	//递归下去
+	strSerializedData.append(serializeRecursive(pNode->left));
+	strSerializedData.append(serializeRecursive(pNode->right));
+
+	return strSerializedData;
+}
+
 int Codec::getNodeCountByDepth(int fullBinaryTreeDepth)
 {
 	return pow(2, fullBinaryTreeDepth);
@@ -204,6 +239,37 @@ int Codec::getNodeCountByDepth(int fullBinaryTreeDepth)
 int Codec::getDepthByIndex(int index)
 {
 	return log2(index + 1);
+}
+
+TreeNode* Codec::deserializeNodeRecursive(queue<string>& nodeValueQuue)
+{
+	string strNodeValue = nodeValueQuue.front();
+	nodeValueQuue.pop();
+
+	if (strNodeValue == "NULL")
+		return nullptr;
+
+	//递归下去。。。
+	TreeNode* pNode = new TreeNode(stoi(strNodeValue));
+	pNode->left = deserializeNodeRecursive(nodeValueQuue);
+	pNode->right = deserializeNodeRecursive(nodeValueQuue);
+
+	return pNode;
+}
+
+TreeNode* Codec::deserializeRecursive(string strData)
+{
+	stringstream input(strData);
+	string strTemp;
+	queue<string> strNodeQueue;
+
+	while (getline(input,strTemp,','))
+		strNodeQueue.push(strTemp);
+
+
+	TreeNode* pRootNode = deserializeNodeRecursive(strNodeQueue);
+
+	return pRootNode;
 }
 
 vector<string> Codec::splitSerialzeStr(string serializedData, vector<string>& out)
@@ -238,7 +304,7 @@ int main()
 
 	TreeNode* pRoot = solution.deserialize(serialzeStrData);
 
-	cout << "2:*********" << solution.serialize(pRoot) << endl;
+	cout << "2:*********" << solution.serializeRecursive(pRoot) << endl;
 
 	system("pause");
 	return 0;
