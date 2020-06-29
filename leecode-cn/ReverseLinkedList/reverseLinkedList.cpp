@@ -48,6 +48,14 @@ int main()
 	Solution s;
 	ListNode* pReverseNode = s.reverseLinkedList(pNode0);
 
+	while (pReverseNode != nullptr)
+	{
+		std::cout << pReverseNode->val << "->";
+		ListNode* pNode = pReverseNode;
+		pReverseNode = pReverseNode->next;
+		//delete pNode;
+	}
+
 	system("pause");
 	return 0;
 }

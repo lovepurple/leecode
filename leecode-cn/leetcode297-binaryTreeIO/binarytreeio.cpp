@@ -1,5 +1,5 @@
 /*
-	Äã¿ÉÒÔ½«ÒÔÏÂ¶ş²æÊ÷£º
+	ä½ å¯ä»¥å°†ä»¥ä¸‹äºŒå‰æ ‘ï¼š
 
 	1
    / \
@@ -7,12 +7,12 @@
 	 / \
 	4   5
 
-ĞòÁĞ»¯Îª "[1,2,3,null,null,4,5]"
+åºåˆ—åŒ–ä¸º "[1,2,3,null,null,4,5]"
 
-  ¶ş²æÊ÷µÄĞòÁĞ»¯ºÍ·´ĞòÁĞ»¯
+  äºŒå‰æ ‘çš„åºåˆ—åŒ–å’Œååºåˆ—åŒ–
 	 queue + BFS
 
-	 Ê¹ÓÃÂú¶ş²æÊ÷¿ÉÄÜ»á¶à³öÒ»¶Ñnull ½Úµã£¬
+	 ä½¿ç”¨æ»¡äºŒå‰æ ‘å¯èƒ½ä¼šå¤šå‡ºä¸€å †null èŠ‚ç‚¹ï¼Œ
   */
 
 #include <iostream>
@@ -38,7 +38,7 @@ public:
 	~Codec();
 
 	/// <summary>
-	/// ĞòÁĞ»¯¶ş²æÊ÷£¬Ê¹ÓÃBFS ½«Ô­¶ş²æÊ÷ÊÓÎªÍêÈ«¶ş²æÊ÷ 
+	/// åºåˆ—åŒ–äºŒå‰æ ‘ï¼Œä½¿ç”¨BFS å°†åŸäºŒå‰æ ‘è§†ä¸ºå®Œå…¨äºŒå‰æ ‘ 
 	/// </summary>
 	/// <param name="root"></param>
 	/// <returns></returns>
@@ -47,14 +47,14 @@ public:
 	TreeNode* deserialize(string data);
 
 	/// <summary>
-	/// µİ¹éĞòÁĞ»¯¶ş²æÊ÷
+	/// é€’å½’åºåˆ—åŒ–äºŒå‰æ ‘
 	/// </summary>
 	/// <param name="root"></param>
 	/// <returns></returns>
 	string serializeRecursive(TreeNode* root);
 
 	/// <summary>
-	/// µİ¹é·´ĞòÁĞ»¯¶ş²æÊ÷
+	/// é€’å½’ååºåˆ—åŒ–äºŒå‰æ ‘
 	/// </summary>
 	/// <param name="strData"></param>
 	/// <returns></returns>
@@ -64,7 +64,7 @@ public:
 
 private:
 	/// <summary>
-	/// »ñÈ¡Ö¸¶¨Éî¶È½áµãÊıÁ¿
+	/// è·å–æŒ‡å®šæ·±åº¦ç»“ç‚¹æ•°é‡
 	/// </summary>
 	/// <param name="fullBinaryTreeDepth"></param>
 	/// <returns></returns>
@@ -94,7 +94,7 @@ string Codec::serialize(TreeNode* root)
 	int currentIndex = 0;
 	string strData;
 	vector<TreeNode*> levelNodeQueue;
-	//Ò»²ãµÄËùÓĞ½áµã¶¼ÊÇNULL ½áÊø
+	//ä¸€å±‚çš„æ‰€æœ‰ç»“ç‚¹éƒ½æ˜¯NULL ç»“æŸ
 
 	while (nodeQueue.size() > 0)
 	{
@@ -114,7 +114,7 @@ string Codec::serialize(TreeNode* root)
 			nodeQueue.push(pTreeNode->right);
 		}
 
-		//Ã¿Ò»²ã½áÊø
+		//æ¯ä¸€å±‚ç»“æŸ
 		int currentDepth = getDepthByIndex(currentIndex);
 		if (currentIndex == pow(2, currentDepth + 1) - 2)
 		{
@@ -213,8 +213,8 @@ TreeNode* Codec::deserialize(string data)
 }
 
 /*
-	Àí½â£º
-		¹ã¶ÈÓÅÏÈµÄµİ¹é
+	ç†è§£ï¼š
+		å¹¿åº¦ä¼˜å…ˆçš„é€’å½’
 
 */
 string Codec::serializeRecursive(TreeNode* pNode)
@@ -224,7 +224,7 @@ string Codec::serializeRecursive(TreeNode* pNode)
 
 	string strSerializedData = to_string(pNode->val) + ",";
 
-	//µİ¹éÏÂÈ¥
+	//é€’å½’ä¸‹å»
 	strSerializedData.append(serializeRecursive(pNode->left));
 	strSerializedData.append(serializeRecursive(pNode->right));
 
@@ -249,7 +249,7 @@ TreeNode* Codec::deserializeNodeRecursive(queue<string>& nodeValueQuue)
 	if (strNodeValue == "NULL")
 		return nullptr;
 
-	//µİ¹éÏÂÈ¥¡£¡£¡£
+	//é€’å½’ä¸‹å»ã€‚ã€‚ã€‚
 	TreeNode* pNode = new TreeNode(stoi(strNodeValue));
 	pNode->left = deserializeNodeRecursive(nodeValueQuue);
 	pNode->right = deserializeNodeRecursive(nodeValueQuue);
@@ -274,7 +274,7 @@ TreeNode* Codec::deserializeRecursive(string strData)
 
 vector<string> Codec::splitSerialzeStr(string serializedData, vector<string>& out)
 {
-	//stringstream ´¦Àí×Ö·û´®·Ö¸î
+	//stringstream å¤„ç†å­—ç¬¦ä¸²åˆ†å‰²
 	out.clear();
 
 	stringstream strStream(serializedData);
