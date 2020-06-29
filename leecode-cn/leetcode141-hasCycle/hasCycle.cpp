@@ -43,20 +43,21 @@ bool Solution::hasCycle(ListNode* head)
 		return false;
 
 	//快慢指针，如果有环，快指针还能追上慢指针
-	ListNode* pFast = head->next->next;
+	ListNode* pFast = head;
 	ListNode* pSlow = head;
 
 	while (pFast != nullptr)
 	{
-		if (pFast == pSlow)
-			return true;
-
-		if (pFast->next != nullptr && pFast->next->next != nullptr)
+		if (pFast->next != nullptr)
 			pFast = pFast->next->next;
 		else
 			return false;
 
+		pFast = pFast->next->next;
 		pSlow = pSlow->next;
+
+		if (pFast == pSlow)
+			return true;
 	}
 
 	return false;
