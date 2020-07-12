@@ -18,14 +18,14 @@ public:
 	TreeNode* rightRotate(TreeNode* rotateNode);
 
 	/// <summary>
-	/// ÖĞĞò´òÓ¡
+	/// ä¸­åºæ‰“å°
 	/// </summary>
 	void printTreeLNR(TreeNode* rootNode);
 
 	void printTreeLNR();
 
 	/// <summary>
-	/// Ç°Ğò´òÓ¡
+	/// å‰åºæ‰“å°
 	/// </summary>
 	/// <param name="rootNode"></param>
 	void printTreeNLR(TreeNode* rootNode);
@@ -71,7 +71,7 @@ TreeNode* Tree::leftRotate(TreeNode* rotateNode)
 
 TreeNode* Tree::rightRotate(TreeNode* rotateNode)
 {
-	//ÓÒĞı£¬¸¸±äÓÒ×Ó£¬ÓÒ×Ó±ä×óËï
+	//å³æ—‹ï¼Œçˆ¶å˜å³å­ï¼Œå³å­å˜å·¦å­™
 	if (rotateNode == pRoot)
 		return pRoot;
 
@@ -106,7 +106,7 @@ TreeNode* Tree::rightRotate(TreeNode* rotateNode)
 	return pRoot;
 }
 
-//Àí½â¡£¡£¡£Àí½â ¡£¡£¡£¡£¡£
+//ç†è§£ã€‚ã€‚ã€‚ç†è§£ ã€‚ã€‚ã€‚ã€‚ã€‚
 void Tree::printTreeLNR(TreeNode* rootNode)
 {
 	if (rootNode != NULL)
@@ -217,7 +217,7 @@ TreeNode* Tree::findNode(int nodeValue)
 
 int main()
 {
-	//¹¹Ôì¶ş²æÊ÷
+	//æ„é€ äºŒå‰æ ‘
 
 	TreeNode* pRootNode = new TreeNode();
 	pRootNode->val = 5;
@@ -259,7 +259,7 @@ int main()
 
 
 	Tree tree(pRootNode);
-	//tree.printTreeLNR(pRootNode);			//½ÚµãĞı×ª ÖĞĞò±éÀúµÄ½á¹û²»±ä
+	//tree.printTreeLNR(pRootNode);			//èŠ‚ç‚¹æ—‹è½¬ ä¸­åºéå†çš„ç»“æœä¸å˜
 	std::cout << "-----------" << std::endl;
 	tree.printTreeLNR(pRootNode);
 	std::cout << "-----------" << std::endl;

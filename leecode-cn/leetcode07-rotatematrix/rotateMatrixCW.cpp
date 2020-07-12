@@ -1,6 +1,6 @@
 /*
-	˳ʱ����ת����
-	��Ϊ�����������Ŀռ䣬��������ʱ�ֲ�����Ⱦ��ԭ���ݣ���ת���Σ� ���� �Խ�
+	顺时针旋转矩阵
+	因为不能申请额外的空间，在做交换时又不能污染到原数据，翻转两次， 左右 对角
 */
 #include <iostream>
 #include <vector>
@@ -34,7 +34,7 @@ void Solution::rotate(vector<vector<int>>& matrix)
 	vector<vector<int>>::iterator it = matrix.begin();
 	int cols = matrix.begin()->size();
 
-	//��ֱ��ת
+	//垂直翻转
 	for (int i = 0; i < rows / 2; ++i)
 	{
 		for (int j = 0; j < cols; ++j)
@@ -45,7 +45,7 @@ void Solution::rotate(vector<vector<int>>& matrix)
 		}
 	}
 
-	//�ԽǷ�ת
+	//对角翻转
 	for (int i = 1; i < rows; ++i)
 	{
 		for (int j = 0; j < i; ++j)

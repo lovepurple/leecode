@@ -1,5 +1,5 @@
 /**
- * ©ЛкыеепР
+ * Е©╚И─÷Ф▌▓Е╨▐
  */
 #include <iostream>
 
@@ -36,7 +36,7 @@ void quickSort(int* arr, int low, int high)
 
 }
 
-//╥ж╦Н╨╞йЩ
+//Е┬├Е┴╡Е┤╫Ф∙╟
 int partition(int* arr, int low, int high)
 {
 	if (high - low > 0)
