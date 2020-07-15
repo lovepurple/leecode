@@ -91,7 +91,7 @@ RBTreeNode* RBTree::searchParent(int searchValue)
 }
 
 /// <summary>
-/// ·Çµİ¹éÖĞĞò±éÀú¶ş²æÊ÷
+/// éé€’å½’ä¸­åºéå†äºŒå‰æ ‘
 /// </summary>
 void RBTree::printTreeLNR()
 {

@@ -1,5 +1,5 @@
 /*
-	µİ¹éÁ·Ï°£¬·µ»ØÊıµÄÉî¶È
+	é€’å½’ç»ƒä¹ ï¼Œè¿”å›æ•°çš„æ·±åº¦
 */
 #include <iostream>
 
@@ -30,7 +30,7 @@ int getTreeDepth(TreeNode* rootNode)
 }
 
 /*
-	µİ¹éÇó½âµÄÀí½â£º
+	é€’å½’æ±‚è§£çš„ç†è§£ï¼š
 */
 int getTreeDepthRecursion(TreeNode* rootNode)
 {

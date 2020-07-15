@@ -51,7 +51,7 @@ int main()
 	int target = 6;
 	Solution solution;
 
-	//result »áÒıÆğ¶ÔÏó¿½±´ ËùÒÔÍ¨Í¨³£C++¶¼ÊÇ·µ»ØÖµµ±²ÎÊı´«µ½º¯ÊıÖĞ
+	//result ä¼šå¼•èµ·å¯¹è±¡æ‹·è´ æ‰€ä»¥é€šé€šå¸¸C++éƒ½æ˜¯è¿”å›å€¼å½“å‚æ•°ä¼ åˆ°å‡½æ•°ä¸­
 	const vector<int> result = solution.twoSum(nums, target);
 
 

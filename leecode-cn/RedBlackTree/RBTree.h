@@ -57,7 +57,7 @@ private:
 	RBTreeNode* pRootNode;
 
 	/// <summary>
-	/// ²éÕÒ¸¸½Úµã
+	/// æŸ¥æ‰¾çˆ¶èŠ‚ç‚¹
 	/// </summary>
 	/// <param name="searchValue"></param>
 	/// <returns></returns>

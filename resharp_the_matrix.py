@@ -33,7 +33,7 @@
 
 
 class reshape_the_matrix:
-    def matrixReshape(self, nums, r, c):
+    def matrixReshape(self, 4nums, r, c):
         targetCount = r * c
         numsCount = len(nums) * len(nums[0])
 
