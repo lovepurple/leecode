@@ -41,14 +41,14 @@ public:
 
 private:
 	/// <summary>
-	/// ½Úµã×óĞı
+	/// èŠ‚ç‚¹å·¦æ—‹
 	/// </summary>
 	/// <param name="pRotateNode"></param>
 	/// <returns></returns>
 	RBTreeNode* leftRotate(RBTreeNode* pRotateNode);
 
 	/// <summary>
-	/// ½ÚµãÓÒĞı
+	/// èŠ‚ç‚¹å³æ—‹
 	/// </summary>
 	/// <param name="pRotateNode"></param>
 	/// <returns></returns>
@@ -57,7 +57,7 @@ private:
 	RBTreeNode* pRootNode;
 
 	/// <summary>
-	/// æŸ¥æ‰¾çˆ¶èŠ‚ç‚¹
+	/// éŒãƒ¦å£˜é–æƒ°å¦­é?
 	/// </summary>
 	/// <param name="searchValue"></param>
 	/// <returns></returns>

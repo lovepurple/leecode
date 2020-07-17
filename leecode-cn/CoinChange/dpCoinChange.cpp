@@ -7,6 +7,12 @@
 
 	状态转移方程：
 		f(x) = 最少用多少枚硬币拼出x
+		f(x) = min(f(x-2),f(x-5),f(x-7) + 1
+		每次都是上一个min + 1
+		!!!!!
+			x 是钱数，不是硬币数 f[x] 才是硬币数
+		边界问题：
+			x - 2 < 0 直接返回Int.Max
 */
 
 #include <iostream>
@@ -18,5 +24,24 @@ int getCoinCount(const vector<int> coinList, int total);
 
 int main()
 {
+	vector<int> vecCoins = { 2,5,7 };
+	int totalAmount = 27;
+
+	cout << "最少需要：" << getCoinCount(vecCoins, totalAmount) << "枚硬币才能拼出：" << totalAmount << endl;
+
 	return 0;
+}
+
+int getCoinCount(const vector<int> coinList, int total)
+{
+	int* dp = new int[total + 1];
+	dp[0] = INT_MAX;
+
+	for (int i = 1; i <= total; ++i)
+	{
+
+	}
+
+
+
 }

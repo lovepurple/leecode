@@ -46,7 +46,7 @@ RBTree::RBTree(std::vector<int>& arrays)
 
 RBTreeNode* RBTree::leftRotate(RBTreeNode* pRotateNode)
 {
-	//��������תRoot
+	//左旋不能转Root
 	if (pRotateNode == pRootNode)
 		return pRootNode;
 
@@ -91,7 +91,7 @@ RBTreeNode* RBTree::searchParent(int searchValue)
 }
 
 /// <summary>
-/// 非递归中序遍历二叉树
+/// 闈為€掑綊涓簭閬嶅巻浜屽弶鏍?
 /// </summary>
 void RBTree::printTreeLNR()
 {
@@ -101,7 +101,7 @@ void RBTree::printTreeLNR()
 
 	while (tempNodeStack.size() > 0 || pCurrentNode != nullptr)
 	{
-		//һֱ׷����������
+		//一直追到最左子树
 		if (pCurrentNode != nullptr)
 		{
 			tempNodeStack.push_back(pCurrentNode);
