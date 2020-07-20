@@ -27,7 +27,7 @@ int main()
 	vector<int> vecCoins = { 2,5,7 };
 	int totalAmount = 27;
 
-	cout << "最少需要：" << getCoinCount(vecCoins, totalAmount) << "枚硬币才能拼出：" << totalAmount << endl;
+	std::cout << "min coins:" << getCoinCount(vecCoins, totalAmount) << endl;
 
 	return 0;
 }
@@ -35,13 +35,22 @@ int main()
 int getCoinCount(const vector<int> coinList, int total)
 {
 	int* dp = new int[total + 1];
-	dp[0] = INT_MAX;
+	dp[0] = 0;
 
 	for (int i = 1; i <= total; ++i)
 	{
+		int min = INT_MAX;
+		for (vector<int>::const_iterator it = coinList.begin(); it != coinList.end(); ++it)
+		{
+			if (i - *it < 0)
+				continue;
 
+			if (dp[i - *it] < min)
+				min = dp[i - *it];
+		}
+
+		dp[i] = min == INT_MAX ? INT_MAX : min + 1;
 	}
 
-
-
+	return dp[total];
 }
