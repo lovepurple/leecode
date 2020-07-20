@@ -40,8 +40,20 @@ int getCoinCount(const vector<int> coinList, int total)
 	for (int i = 1; i <= total; ++i)
 	{
 
+		int minCoins = INT_MAX;
+
+		//获取每次的最小值
+		for (vector<int>::const_iterator it = coinList.begin(); it != coinList.end(); ++it)
+		{
+			if (i - *it > 0)
+			{
+				minCoins = min(minCoins, dp[i - *it]);
+			}
+		}
+
+
 	}
 
-
+	return dp[total]; +
 
 }
