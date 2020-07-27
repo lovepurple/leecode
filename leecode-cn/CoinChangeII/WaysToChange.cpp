@@ -92,25 +92,8 @@ int Solution::waysToChange(int n)
 					内层		for(i->n)
 		*/
 
-		//DP填充初始值 
-	for (int i = 5; i < n + 1; ++i)
-		dp[i] = INT_MAX;
 
-	for (vector<int>::const_iterator it = CoinList.begin(); it != CoinList.end(); ++it)
-	{
-		int coinNum = *it;
-
-		for (int i = 5; i <= n; ++i)
-		{
-			if (i - coinNum < 0)
-				continue;			//当前 i 不受coin影响
-
-			if (dp[i] == INT_MAX)
-				dp[i] = dp[i - coinNum];
-			else
-				dp[i] += dp[i - coinNum];
-		}  
-	}
+	 
 
 	return dp[n];
 }
