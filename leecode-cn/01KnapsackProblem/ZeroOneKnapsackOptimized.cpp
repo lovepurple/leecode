@@ -22,7 +22,7 @@ int ZeroOneKnapsackOptimized::ZeroOneKnapsack(const std::vector<int> goodsValues
 	{
 		int weightOfGoods = goodsWeights[i];
 		//反向计算
-		for (int j = totalCapacity; j >= 0; --j)
+		for (int j = totalCapacity; j >= 1; --j)
 		{
 			if (j >= weightOfGoods)
 				dp[j] = std::max(dp[j], dp[j - weightOfGoods] + goodsValues[i]);
