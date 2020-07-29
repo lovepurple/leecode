@@ -26,6 +26,8 @@ public:
 
 	int waysToChangeOptimized(int n);
 
+	int change(int amount, vector<int>& coins);
+
 	const vector<int> CoinList = { 25,10,5,1 };
 
 
@@ -43,6 +45,9 @@ int main()
 
 	int ways2 = s.waysToChangeOptimized(n);
 	cout << ways2 << endl;
+
+	vector<int> coins = { 1,2,5 };
+	int ways3 = s.change(n, coins);
 
 	return 0;
 }
@@ -171,4 +176,35 @@ int Solution::waysToChangeOptimized(int n)
 
 
 	return dp[n];
+}
+
+int Solution::change(int amount, vector<int>& coins)
+{
+	vector<int> vecDp(amount + 1);
+
+	vecDp[0] = 1;			//初始化dp[0]
+	for (int i = 0; i < coins.size(); ++i)
+	{
+		int coinValue = coins[i];
+
+		/*
+			//这里可以优化的点  j的起始值在 < coinvalue时，dp[j] 不需要更新
+			因此 j=coinvalue[i] to amount 也可以，减少一部分if
+
+			for(int j = coinvalue;j<=amount ;++j)
+				vecDp[j] = vecDp[j] + vecDp[j-CoinValue];
+
+				todo:
+					耗时会有明显减少
+						20ms -> 12ms
+
+		*/
+		for (int j = 1; j <= amount; ++j)
+		{
+			if (j - coinValue >= 0)
+				vecDp[j] = vecDp[j] + vecDp[j - coinValue];
+		}
+	}
+
+	return vecDp[amount];
 }
