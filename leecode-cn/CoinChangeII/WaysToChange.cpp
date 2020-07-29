@@ -37,7 +37,7 @@ public:
 int main()
 {
 	Solution s;
-	int n = 5;
+	int n = 26;
 
 	int ways = s.waysToChange(n);
 
@@ -124,13 +124,24 @@ int Solution::waysToChange(int n)
 	{
 		dp[i] = vector<int>(n + 1);
 
-		//初始始的问题 dp[i][0] = 1 每一行的第一个数都为1
+		//初始始的问题 dp[i][0] = 1 如果coin[0] 不是1 初始值问题
 		dp[i][0] = 1;
 
-		for (int j = 1; j <= n; ++j)
+		for (int j = CoinList[i]; j <= n; ++j)
 		{
-			if (j - CoinList[i] >= 0)
-				dp[i][j] = dp[i - 1][j] + dp[i][j - CoinList[i]];
+			/*	优化之前  229ms  87.6  n=61
+			if (i == 0 && j - CoinList[i] >= 0)
+					dp[i][j] = j % CoinList[i] == 0 ? 1 : 0;
+				else if (j - CoinList[i] >= 0)
+					dp[i][j] = dp[i - 1][j] + dp[i][j - CoinList[i]];*/
+
+					//优化之后
+			if (i == 0)
+				dp[i][j] = j % CoinList[i] == 0 ? 1 : 0;
+			else
+				dp[i][j] = (dp[i - 1][j] + dp[i][j - CoinList[i]]) % 1000000007;
+
+
 		}
 	}
 
@@ -169,7 +180,7 @@ int Solution::waysToChangeOptimized(int n)
 				更新顺序为正序 dp[4] 是包括当前coin
 
 				*/
-				dp[j] += dp[j - CoinList[i]];
+				dp[j] = (dp[j] + dp[j - CoinList[i]]) % 1000000007;
 			}
 		}
 	}
