@@ -111,6 +111,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "leetcode322-CoinChange", "l
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "leetcode416-CanPartition", "leetcode416-CanPartition\leetcode416-CanPartition.vcxproj", "{4ED2584A-4ECE-4DC6-8480-1DF2157FB98B}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "leetcode100-isSameTree", "leetcode100-isSameTree\leetcode100-isSameTree.vcxproj", "{C4ACF930-B4F5-4E63-9B98-92D4FBEF2CC2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -471,6 +473,14 @@ Global
 		{4ED2584A-4ECE-4DC6-8480-1DF2157FB98B}.Release|x64.Build.0 = Release|x64
 		{4ED2584A-4ECE-4DC6-8480-1DF2157FB98B}.Release|x86.ActiveCfg = Release|Win32
 		{4ED2584A-4ECE-4DC6-8480-1DF2157FB98B}.Release|x86.Build.0 = Release|Win32
+		{C4ACF930-B4F5-4E63-9B98-92D4FBEF2CC2}.Debug|x64.ActiveCfg = Debug|x64
+		{C4ACF930-B4F5-4E63-9B98-92D4FBEF2CC2}.Debug|x64.Build.0 = Debug|x64
+		{C4ACF930-B4F5-4E63-9B98-92D4FBEF2CC2}.Debug|x86.ActiveCfg = Debug|Win32
+		{C4ACF930-B4F5-4E63-9B98-92D4FBEF2CC2}.Debug|x86.Build.0 = Debug|Win32
+		{C4ACF930-B4F5-4E63-9B98-92D4FBEF2CC2}.Release|x64.ActiveCfg = Release|x64
+		{C4ACF930-B4F5-4E63-9B98-92D4FBEF2CC2}.Release|x64.Build.0 = Release|x64
+		{C4ACF930-B4F5-4E63-9B98-92D4FBEF2CC2}.Release|x86.ActiveCfg = Release|Win32
+		{C4ACF930-B4F5-4E63-9B98-92D4FBEF2CC2}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -517,6 +527,7 @@ Global
 		{88C32007-D750-427A-B6D7-D6563BD77CEC} = {CACF2C4A-0567-44C1-B16D-EA2550BAA608}
 		{E05F3C74-C479-47B5-B008-834099870283} = {D56C4C75-9DE6-499D-9B4F-5618F91A0FFF}
 		{4ED2584A-4ECE-4DC6-8480-1DF2157FB98B} = {D56C4C75-9DE6-499D-9B4F-5618F91A0FFF}
+		{C4ACF930-B4F5-4E63-9B98-92D4FBEF2CC2} = {AE52A779-C165-4FD8-9BDA-EF49D37E5B1F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1B46ABCB-2337-4B76-AC80-FB005083CB16}
