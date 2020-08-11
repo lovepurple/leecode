@@ -117,6 +117,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "leetcode300-LengthOfLIS", "
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "leetcode523-checkSubarraySum", "leetcode523-checkSubarraySum\leetcode523-checkSubarraySum.vcxproj", "{BD0FD78D-DEBB-4D51-A5C8-D562CAC6CA76}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "leetcode105-BuildTree", "leetcode105-BuildTree\leetcode105-BuildTree.vcxproj", "{190EDB41-0B49-40E0-944A-7D49AA129FBA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -501,6 +503,14 @@ Global
 		{BD0FD78D-DEBB-4D51-A5C8-D562CAC6CA76}.Release|x64.Build.0 = Release|x64
 		{BD0FD78D-DEBB-4D51-A5C8-D562CAC6CA76}.Release|x86.ActiveCfg = Release|Win32
 		{BD0FD78D-DEBB-4D51-A5C8-D562CAC6CA76}.Release|x86.Build.0 = Release|Win32
+		{190EDB41-0B49-40E0-944A-7D49AA129FBA}.Debug|x64.ActiveCfg = Debug|x64
+		{190EDB41-0B49-40E0-944A-7D49AA129FBA}.Debug|x64.Build.0 = Debug|x64
+		{190EDB41-0B49-40E0-944A-7D49AA129FBA}.Debug|x86.ActiveCfg = Debug|Win32
+		{190EDB41-0B49-40E0-944A-7D49AA129FBA}.Debug|x86.Build.0 = Debug|Win32
+		{190EDB41-0B49-40E0-944A-7D49AA129FBA}.Release|x64.ActiveCfg = Release|x64
+		{190EDB41-0B49-40E0-944A-7D49AA129FBA}.Release|x64.Build.0 = Release|x64
+		{190EDB41-0B49-40E0-944A-7D49AA129FBA}.Release|x86.ActiveCfg = Release|Win32
+		{190EDB41-0B49-40E0-944A-7D49AA129FBA}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -550,6 +560,7 @@ Global
 		{C4ACF930-B4F5-4E63-9B98-92D4FBEF2CC2} = {AE52A779-C165-4FD8-9BDA-EF49D37E5B1F}
 		{9EB9A103-216D-48B2-AE3D-B6B84DBC9CC6} = {D56C4C75-9DE6-499D-9B4F-5618F91A0FFF}
 		{BD0FD78D-DEBB-4D51-A5C8-D562CAC6CA76} = {D56C4C75-9DE6-499D-9B4F-5618F91A0FFF}
+		{190EDB41-0B49-40E0-944A-7D49AA129FBA} = {F5849D11-D41B-4208-91E9-5B99F4ABED19}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1B46ABCB-2337-4B76-AC80-FB005083CB16}
