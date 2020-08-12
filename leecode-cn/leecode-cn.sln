@@ -123,6 +123,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Interview0805-Multiply", "I
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "leetcode698-canPartitionKSubsets", "leetcode698-canPartitionKSubsets\leetcode698-canPartitionKSubsets.vcxproj", "{20BD7832-35B9-4BC8-8C94-BEF0120AE077}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "leetcode509-Fib", "leetcode509-Fib\leetcode509-Fib.vcxproj", "{1C8562C0-7C0C-46F9-891F-05FA8BDA5196}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -531,6 +533,14 @@ Global
 		{20BD7832-35B9-4BC8-8C94-BEF0120AE077}.Release|x64.Build.0 = Release|x64
 		{20BD7832-35B9-4BC8-8C94-BEF0120AE077}.Release|x86.ActiveCfg = Release|Win32
 		{20BD7832-35B9-4BC8-8C94-BEF0120AE077}.Release|x86.Build.0 = Release|Win32
+		{1C8562C0-7C0C-46F9-891F-05FA8BDA5196}.Debug|x64.ActiveCfg = Debug|x64
+		{1C8562C0-7C0C-46F9-891F-05FA8BDA5196}.Debug|x64.Build.0 = Debug|x64
+		{1C8562C0-7C0C-46F9-891F-05FA8BDA5196}.Debug|x86.ActiveCfg = Debug|Win32
+		{1C8562C0-7C0C-46F9-891F-05FA8BDA5196}.Debug|x86.Build.0 = Debug|Win32
+		{1C8562C0-7C0C-46F9-891F-05FA8BDA5196}.Release|x64.ActiveCfg = Release|x64
+		{1C8562C0-7C0C-46F9-891F-05FA8BDA5196}.Release|x64.Build.0 = Release|x64
+		{1C8562C0-7C0C-46F9-891F-05FA8BDA5196}.Release|x86.ActiveCfg = Release|Win32
+		{1C8562C0-7C0C-46F9-891F-05FA8BDA5196}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -583,6 +593,7 @@ Global
 		{190EDB41-0B49-40E0-944A-7D49AA129FBA} = {F5849D11-D41B-4208-91E9-5B99F4ABED19}
 		{E4849D95-BAEB-4268-883D-A3F1F3B0D601} = {F5849D11-D41B-4208-91E9-5B99F4ABED19}
 		{20BD7832-35B9-4BC8-8C94-BEF0120AE077} = {D56C4C75-9DE6-499D-9B4F-5618F91A0FFF}
+		{1C8562C0-7C0C-46F9-891F-05FA8BDA5196} = {D56C4C75-9DE6-499D-9B4F-5618F91A0FFF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1B46ABCB-2337-4B76-AC80-FB005083CB16}
