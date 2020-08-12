@@ -56,6 +56,9 @@ bool Solution::canPartitionKSubsets(vector<int>& nums, int k)
 
 void Solution::quickSort(vector<int>& nums, int indexFrom, int indexEnd)
 {
+	if (indexEnd - indexFrom < 1)
+		return;
+
 	int pivot = nums[indexFrom];
 	int i = indexFrom + 1;
 	int j = indexEnd;
@@ -72,12 +75,20 @@ void Solution::quickSort(vector<int>& nums, int indexFrom, int indexEnd)
 		{
 			int tmp = nums[i];
 			nums[i] = nums[j];
-			nums[j] = nums[i];
+			nums[j] = tmp;
 
 			j--;
 			i++;
 		}
 	}
 
+	if (pivot > nums[j])
+	{
+		int tmp = nums[indexFrom];
+		nums[indexFrom] = nums[j];
+		nums[j] = tmp;
+	}
 
+	quickSort(nums, indexFrom, j - 1);
+	quickSort(nums, j + 1, indexEnd);
 }
