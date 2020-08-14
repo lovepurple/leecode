@@ -8,8 +8,6 @@ class Solution
 public:
 	string multiply(string num1, string num2);
 
-	string multiply2(string num, string num2, int n);
-
 	string add(string num1, string num2);
 };
 
@@ -62,17 +60,6 @@ string Solution::multiply(string num1, string num2)
 		strRes = add(strRes, subRes);
 	}
 
-	//reverse(strRes.begin(), strRes.end());
-	////trimȥ0
-	//for (string::iterator it = strRes.end() - 1; it >= strRes.begin(); --it)
-	//{
-	//	if (*it == '0')
-	//		strRes.erase(it);
-	//	else
-	//		break;
-	//}
-	//reverse(strRes.begin(), strRes.end());
-
 	return strRes.length() == 0 ? "0" : strRes;
 }
 
@@ -110,12 +97,13 @@ string Solution::add(string num1, string num2)
 			if (charIndexOfNum1 - 1 >= 0)
 				num1[charIndexOfNum1 - 1] += 1;
 			else
-				needAppend = true;
+				needAppend = true;//最后一位过10进位
 		}
 
 		char sumChar = (char)((digNum1 + digNum2) % 10) + '0';
 		sumOfToStr.push_back(sumChar);
 
+		//最后一位过10进位
 		if (needAppend)
 			sumOfToStr.push_back('1');
 	}
