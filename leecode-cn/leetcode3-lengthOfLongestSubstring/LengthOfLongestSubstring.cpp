@@ -80,9 +80,8 @@ int Solution::lengthOfLongestSubstringDoublePointer(string s)
 
 			longestSubStringLength = max(currentSubstringLength, longestSubStringLength);
 
-			//防止倒回去  abba 
 			if (existied->second > pointerSlow)
-				pointerSlow = existied->second + 1;		//上一次的pointer+1
+				pointerSlow = pointerFast;
 		}
 
 		charIndexMap[s[pointerFast]] = pointerFast;
