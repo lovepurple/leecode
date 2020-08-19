@@ -137,6 +137,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "leetcode3-lengthOfLongestSu
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "offer22-GetKthFromEnd", "offer22-GetKthFromEnd\offer22-GetKthFromEnd.vcxproj", "{4ACEB8DF-3B2F-4F98-88F7-A6502026AEDD}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "leetcode647-CountSubstrings", "leetcode647-CountSubstrings\leetcode647-CountSubstrings.vcxproj", "{5CBD7449-5E73-4D71-A5D5-D8C348BBD66B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -601,6 +603,14 @@ Global
 		{4ACEB8DF-3B2F-4F98-88F7-A6502026AEDD}.Release|x64.Build.0 = Release|x64
 		{4ACEB8DF-3B2F-4F98-88F7-A6502026AEDD}.Release|x86.ActiveCfg = Release|Win32
 		{4ACEB8DF-3B2F-4F98-88F7-A6502026AEDD}.Release|x86.Build.0 = Release|Win32
+		{5CBD7449-5E73-4D71-A5D5-D8C348BBD66B}.Debug|x64.ActiveCfg = Debug|x64
+		{5CBD7449-5E73-4D71-A5D5-D8C348BBD66B}.Debug|x64.Build.0 = Debug|x64
+		{5CBD7449-5E73-4D71-A5D5-D8C348BBD66B}.Debug|x86.ActiveCfg = Debug|Win32
+		{5CBD7449-5E73-4D71-A5D5-D8C348BBD66B}.Debug|x86.Build.0 = Debug|Win32
+		{5CBD7449-5E73-4D71-A5D5-D8C348BBD66B}.Release|x64.ActiveCfg = Release|x64
+		{5CBD7449-5E73-4D71-A5D5-D8C348BBD66B}.Release|x64.Build.0 = Release|x64
+		{5CBD7449-5E73-4D71-A5D5-D8C348BBD66B}.Release|x86.ActiveCfg = Release|Win32
+		{5CBD7449-5E73-4D71-A5D5-D8C348BBD66B}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -660,6 +670,7 @@ Global
 		{B4D60ABD-963D-44EE-BF05-2E682128A25D} = {AE52A779-C165-4FD8-9BDA-EF49D37E5B1F}
 		{9660D075-4D60-4B9F-8F56-53210AE1D521} = {D56C4C75-9DE6-499D-9B4F-5618F91A0FFF}
 		{4ACEB8DF-3B2F-4F98-88F7-A6502026AEDD} = {AE52A779-C165-4FD8-9BDA-EF49D37E5B1F}
+		{5CBD7449-5E73-4D71-A5D5-D8C348BBD66B} = {D56C4C75-9DE6-499D-9B4F-5618F91A0FFF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1B46ABCB-2337-4B76-AC80-FB005083CB16}
