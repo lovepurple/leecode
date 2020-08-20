@@ -90,6 +90,4 @@ void Solution::quickSort(vector<int>& nums, int indexFrom, int indexEnd)
 
 	quickSort(nums, indexFrom, j - 1);
 	quickSort(nums, j + 1, indexEnd);
-
-
 }
