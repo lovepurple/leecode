@@ -30,7 +30,6 @@ int main()
 	Solution s;
 	vector<int> num = { 4,3,2,3,5,2,1 };
 	int k = 4;
-	num = { 10,9,2,5,3,7,101,18 };
 	//cout << s.canPartitionKSubsets(num, k);
 
 	s.quickSort(num, 0, num.size() - 1);
@@ -56,6 +55,9 @@ bool Solution::canPartitionKSubsets(vector<int>& nums, int k)
 
 void Solution::quickSort(vector<int>& nums, int indexFrom, int indexEnd)
 {
+	if (indexEnd - indexFrom < 1)
+		return;
+
 	int pivot = nums[indexFrom];
 	int i = indexFrom + 1;
 	int j = indexEnd;
@@ -72,12 +74,22 @@ void Solution::quickSort(vector<int>& nums, int indexFrom, int indexEnd)
 		{
 			int tmp = nums[i];
 			nums[i] = nums[j];
-			nums[j] = nums[i];
+			nums[j] = tmp;
 
 			j--;
 			i++;
 		}
 	}
+
+	if (pivot > nums[j])
+	{
+		int tmp = nums[indexFrom];
+		nums[indexFrom] = nums[j];
+		nums[j] = tmp;
+	}
+
+	quickSort(nums, indexFrom, j - 1);
+	quickSort(nums, j + 1, indexEnd);
 
 
 }
