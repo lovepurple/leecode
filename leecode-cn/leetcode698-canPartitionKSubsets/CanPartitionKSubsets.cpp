@@ -30,7 +30,6 @@ int main()
 	Solution s;
 	vector<int> num = { 4,3,2,3,5,2,1 };
 	int k = 4;
-	num = { 10,9,2,5,3,7,101,18 };
 	//cout << s.canPartitionKSubsets(num, k);
 
 	s.quickSort(num, 0, num.size() - 1);
