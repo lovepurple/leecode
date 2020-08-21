@@ -11,6 +11,8 @@ class Solution
 {
 public:
 	ListNode* swapPairs(ListNode* head);
+
+	ListNode* swapPairs2(ListNode* head);
 };
 
 
@@ -27,7 +29,9 @@ int main()
 
 
 	Solution solution;
-	solution.swapPairs(pHead);
+	//ListNode* pSW = solution.swapPairs(pHead);
+
+	ListNode* pSW2 = solution.swapPairs2(pHead);
 
 
 	system("pause");
@@ -45,9 +49,22 @@ ListNode* Solution::swapPairs(ListNode* head)
 	head->next = pTemp->next;
 	pTemp->next = head;
 
-	if (nehead == nullptr) 
+	if (nehead == nullptr)
 		nehead = pTemp;
 
 
 	return swapPairs(head->next);
+}
+
+//管好当下，剩下交给递归
+ListNode* Solution::swapPairs2(ListNode* head)
+{
+	if (head == nullptr || head->next == nullptr)
+		return head;
+
+	ListNode* pNext = head->next;
+	head->next = swapPairs2(pNext->next);		//返回的是折腾之后的头
+	pNext->next = head;
+
+	return pNext;
 }

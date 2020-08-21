@@ -149,6 +149,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "leetcode9-IsPalindrome", "l
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "leetcode111-MinDepth", "leetcode111-MinDepth\leetcode111-MinDepth.vcxproj", "{2A2BD8FA-C893-4F18-A89C-00F30DBDCF4B}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Offer26-isSubStructure", "Offer26-isSubStructure\Offer26-isSubStructure.vcxproj", "{06158AAF-CE73-4322-8C3A-A9EC17AE132E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -645,6 +647,14 @@ Global
 		{2A2BD8FA-C893-4F18-A89C-00F30DBDCF4B}.Release|x64.Build.0 = Release|x64
 		{2A2BD8FA-C893-4F18-A89C-00F30DBDCF4B}.Release|x86.ActiveCfg = Release|Win32
 		{2A2BD8FA-C893-4F18-A89C-00F30DBDCF4B}.Release|x86.Build.0 = Release|Win32
+		{06158AAF-CE73-4322-8C3A-A9EC17AE132E}.Debug|x64.ActiveCfg = Debug|x64
+		{06158AAF-CE73-4322-8C3A-A9EC17AE132E}.Debug|x64.Build.0 = Debug|x64
+		{06158AAF-CE73-4322-8C3A-A9EC17AE132E}.Debug|x86.ActiveCfg = Debug|Win32
+		{06158AAF-CE73-4322-8C3A-A9EC17AE132E}.Debug|x86.Build.0 = Debug|Win32
+		{06158AAF-CE73-4322-8C3A-A9EC17AE132E}.Release|x64.ActiveCfg = Release|x64
+		{06158AAF-CE73-4322-8C3A-A9EC17AE132E}.Release|x64.Build.0 = Release|x64
+		{06158AAF-CE73-4322-8C3A-A9EC17AE132E}.Release|x86.ActiveCfg = Release|Win32
+		{06158AAF-CE73-4322-8C3A-A9EC17AE132E}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -709,6 +719,7 @@ Global
 		{B7185E04-B2EC-4E76-A641-B29008D3BABE} = {02127E17-DD58-4DF2-A8C8-7E95505450D5}
 		{486C6AC9-A6C0-4796-8C16-63FF5D2C86F6} = {AE52A779-C165-4FD8-9BDA-EF49D37E5B1F}
 		{2A2BD8FA-C893-4F18-A89C-00F30DBDCF4B} = {F5849D11-D41B-4208-91E9-5B99F4ABED19}
+		{06158AAF-CE73-4322-8C3A-A9EC17AE132E} = {86EC503F-75FE-4D79-8C7E-EBCBE6E5519A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1B46ABCB-2337-4B76-AC80-FB005083CB16}
