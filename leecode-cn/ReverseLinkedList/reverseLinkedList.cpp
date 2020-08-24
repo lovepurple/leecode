@@ -1,5 +1,5 @@
 /*
-	递归反转链表
+	閫掑綊鍙嶈浆閾捐〃
 		swap(i,i+1)
 */
 #include <iostream>
@@ -16,6 +16,8 @@ class Solution
 {
 public:
 	ListNode* reverseLinkedList(ListNode* pLinkedListRootNode);
+
+	ListNode* reverseList(ListNode* head);
 
 	void swapNode(ListNode* pListNode1, ListNode* pListNode2);
 
@@ -74,12 +76,20 @@ ListNode* Solution::reverseLinkedList(ListNode* pLinkedListRootNode)
 	return pNode2;
 }
 
+ListNode* Solution::reverseList(ListNode* head)
+{
+
+
+
+	return nullptr;
+}
+
 void Solution::swapNode(ListNode* pListNode1, ListNode* pListNode2)
 {
 	if (pListNode1 == nullptr || pListNode2 == nullptr)
 		return;
 
-	ListNode* pTempNode2 = pListNode2;			//这里要找到子串的最后一个节点做交换
+	ListNode* pTempNode2 = pListNode2;			//杩欓噷瑕佹壘鍒板瓙涓茬殑鏈�鍚庝竴涓妭鐐瑰仛浜ゆ崲
 	while (pTempNode2->next != nullptr)
 		pTempNode2 = pTempNode2->next;
 
