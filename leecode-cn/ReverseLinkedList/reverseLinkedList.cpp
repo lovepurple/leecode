@@ -48,15 +48,17 @@ int main()
 	std::cout << std::endl;
 
 	Solution s;
-	ListNode* pReverseNode = s.reverseLinkedList(pNode0);
+	//ListNode* pReverseNode = s.reverseLinkedList(pNode0);
 
-	while (pReverseNode != nullptr)
-	{
-		std::cout << pReverseNode->val << "->";
-		ListNode* pNode = pReverseNode;
-		pReverseNode = pReverseNode->next;
-		//delete pNode;
-	}
+	//while (pReverseNode != nullptr)
+	//{
+	//	std::cout << pReverseNode->val << "->";
+	//	ListNode* pNode = pReverseNode;
+	//	pReverseNode = pReverseNode->next;
+	//	//delete pNode;
+	//}
+	std::cout << "====================================================";
+	s.reverseList(pNode0);
 
 	system("pause");
 	return 0;
@@ -75,13 +77,31 @@ ListNode* Solution::reverseLinkedList(ListNode* pLinkedListRootNode)
 
 	return pNode2;
 }
+/*
+	递归： 管好当下，剩下交给递归
+	1—>
+		2- >
+			3->
+				4->
+					5
+	本质是1和剩下的交换
 
+	另一个思路：改指针方向。。。
+	1 -> 2 -> 3 ->4 -> 5
+	1 <- 2 <- 3 <- 4 <- 5
+*/
 ListNode* Solution::reverseList(ListNode* head)
 {
+	if (head == nullptr)
+		return NULL;
 
+	if (head->next == nullptr)
+		return head;
 
+	ListNode* pReverseList = reverseList(head->next);
+	swapNode(head, pReverseList);
 
-	return nullptr;
+	return pReverseList;		//返回的是交换后的头节点
 }
 
 void Solution::swapNode(ListNode* pListNode1, ListNode* pListNode2)
