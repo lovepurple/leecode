@@ -23,12 +23,12 @@ double Solution::myPow(double x, int n)
 	n = n / 2;
 	if (n < 0)
 		n = -n;
-	
+
 
 	if (n % 2 == 1)
-		return x * myPow((x * x),n);
+		return x * myPow((x * x), n);
 	else
-		return myPow((x * x), n / 2);
+		return myPow((x * x), n);
 }
 
 int main()
