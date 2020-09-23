@@ -197,6 +197,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "leetcode617-MergeTrees", "l
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Offer24-ReverseList", "Offer24-ReverseList\Offer24-ReverseList.vcxproj", "{38360868-4CAB-4F1A-8F68-5666CF3BB4A8}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "leetcode198-Rob", "leetcode198-Rob\leetcode198-Rob.vcxproj", "{773FD8B5-FC52-45BA-80DF-9F7E62F50FFC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -853,6 +855,14 @@ Global
 		{38360868-4CAB-4F1A-8F68-5666CF3BB4A8}.Release|x64.Build.0 = Release|x64
 		{38360868-4CAB-4F1A-8F68-5666CF3BB4A8}.Release|x86.ActiveCfg = Release|Win32
 		{38360868-4CAB-4F1A-8F68-5666CF3BB4A8}.Release|x86.Build.0 = Release|Win32
+		{773FD8B5-FC52-45BA-80DF-9F7E62F50FFC}.Debug|x64.ActiveCfg = Debug|x64
+		{773FD8B5-FC52-45BA-80DF-9F7E62F50FFC}.Debug|x64.Build.0 = Debug|x64
+		{773FD8B5-FC52-45BA-80DF-9F7E62F50FFC}.Debug|x86.ActiveCfg = Debug|Win32
+		{773FD8B5-FC52-45BA-80DF-9F7E62F50FFC}.Debug|x86.Build.0 = Debug|Win32
+		{773FD8B5-FC52-45BA-80DF-9F7E62F50FFC}.Release|x64.ActiveCfg = Release|x64
+		{773FD8B5-FC52-45BA-80DF-9F7E62F50FFC}.Release|x64.Build.0 = Release|x64
+		{773FD8B5-FC52-45BA-80DF-9F7E62F50FFC}.Release|x86.ActiveCfg = Release|Win32
+		{773FD8B5-FC52-45BA-80DF-9F7E62F50FFC}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -938,6 +948,7 @@ Global
 		{32E774AD-183C-40E6-82FD-528C02B8B100} = {78CD2893-5F2F-46EB-AD26-B441A1EEF36E}
 		{21820CF0-1546-48C8-BFA6-FC195194F90B} = {F5849D11-D41B-4208-91E9-5B99F4ABED19}
 		{38360868-4CAB-4F1A-8F68-5666CF3BB4A8} = {F5849D11-D41B-4208-91E9-5B99F4ABED19}
+		{773FD8B5-FC52-45BA-80DF-9F7E62F50FFC} = {D56C4C75-9DE6-499D-9B4F-5618F91A0FFF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1B46ABCB-2337-4B76-AC80-FB005083CB16}
