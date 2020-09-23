@@ -199,6 +199,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Offer24-ReverseList", "Offe
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "leetcode198-Rob", "leetcode198-Rob\leetcode198-Rob.vcxproj", "{773FD8B5-FC52-45BA-80DF-9F7E62F50FFC}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "leetcode208-Trie", "leetcode208-Trie\leetcode208-Trie.vcxproj", "{A15469B3-3C83-46BD-9581-94845E624746}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -863,6 +865,14 @@ Global
 		{773FD8B5-FC52-45BA-80DF-9F7E62F50FFC}.Release|x64.Build.0 = Release|x64
 		{773FD8B5-FC52-45BA-80DF-9F7E62F50FFC}.Release|x86.ActiveCfg = Release|Win32
 		{773FD8B5-FC52-45BA-80DF-9F7E62F50FFC}.Release|x86.Build.0 = Release|Win32
+		{A15469B3-3C83-46BD-9581-94845E624746}.Debug|x64.ActiveCfg = Debug|x64
+		{A15469B3-3C83-46BD-9581-94845E624746}.Debug|x64.Build.0 = Debug|x64
+		{A15469B3-3C83-46BD-9581-94845E624746}.Debug|x86.ActiveCfg = Debug|Win32
+		{A15469B3-3C83-46BD-9581-94845E624746}.Debug|x86.Build.0 = Debug|Win32
+		{A15469B3-3C83-46BD-9581-94845E624746}.Release|x64.ActiveCfg = Release|x64
+		{A15469B3-3C83-46BD-9581-94845E624746}.Release|x64.Build.0 = Release|x64
+		{A15469B3-3C83-46BD-9581-94845E624746}.Release|x86.ActiveCfg = Release|Win32
+		{A15469B3-3C83-46BD-9581-94845E624746}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -949,6 +959,7 @@ Global
 		{21820CF0-1546-48C8-BFA6-FC195194F90B} = {F5849D11-D41B-4208-91E9-5B99F4ABED19}
 		{38360868-4CAB-4F1A-8F68-5666CF3BB4A8} = {F5849D11-D41B-4208-91E9-5B99F4ABED19}
 		{773FD8B5-FC52-45BA-80DF-9F7E62F50FFC} = {D56C4C75-9DE6-499D-9B4F-5618F91A0FFF}
+		{A15469B3-3C83-46BD-9581-94845E624746} = {C67021A7-EEC6-4E5C-B0C1-2D3A8EE9ECA5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1B46ABCB-2337-4B76-AC80-FB005083CB16}
