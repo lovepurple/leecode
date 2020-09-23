@@ -9,6 +9,13 @@ public:
 	Solution();
 	~Solution();
 	int maxProfit(vector<int>& prices);
+
+	/// <summary>
+	/// 2020-09-03 17:29:39  å¹²æ‰ä¸€æ¬¡å¾ªç¯
+	/// </summary>
+	/// <param name="prices"></param>
+	/// <returns></returns>
+	int maxProfitOptimize(vector<int>& prices);
 };
 
 Solution::Solution()
@@ -25,7 +32,7 @@ int Solution::maxProfit(vector<int>& prices)
 	int maxSaleDay;
 	for (vector<int>::iterator it = prices.begin(); it != prices.end(); ++it)
 	{
-		//C++ ÖĞ »ñÈ¡µ±Ç° iterator µÄindex
+		//C++ ä¸­ è·å–å½“å‰ iterator çš„index
 		int buyDayIndex = distance(prices.begin(), it);
 		for (vector<int>::iterator itSaleDay = prices.begin() + buyDayIndex + 1; itSaleDay != prices.end(); ++itSaleDay)
 		{
@@ -40,6 +47,11 @@ int Solution::maxProfit(vector<int>& prices)
 
 
 	return max > 0 ? maxSaleDay + 1 : 0;
+}
+
+int Solution::maxProfitOptimize(vector<int>& prices)
+{
+	return 0;
 }
 
 int main()

@@ -193,6 +193,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "leetcode110-IsBalanced", "l
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "leetcode355-Twitter", "leetcode355-Twitter\leetcode355-Twitter.vcxproj", "{32E774AD-183C-40E6-82FD-528C02B8B100}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "leetcode617-MergeTrees", "leetcode617-MergeTrees\leetcode617-MergeTrees.vcxproj", "{21820CF0-1546-48C8-BFA6-FC195194F90B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -833,6 +835,14 @@ Global
 		{32E774AD-183C-40E6-82FD-528C02B8B100}.Release|x64.Build.0 = Release|x64
 		{32E774AD-183C-40E6-82FD-528C02B8B100}.Release|x86.ActiveCfg = Release|Win32
 		{32E774AD-183C-40E6-82FD-528C02B8B100}.Release|x86.Build.0 = Release|Win32
+		{21820CF0-1546-48C8-BFA6-FC195194F90B}.Debug|x64.ActiveCfg = Debug|x64
+		{21820CF0-1546-48C8-BFA6-FC195194F90B}.Debug|x64.Build.0 = Debug|x64
+		{21820CF0-1546-48C8-BFA6-FC195194F90B}.Debug|x86.ActiveCfg = Debug|Win32
+		{21820CF0-1546-48C8-BFA6-FC195194F90B}.Debug|x86.Build.0 = Debug|Win32
+		{21820CF0-1546-48C8-BFA6-FC195194F90B}.Release|x64.ActiveCfg = Release|x64
+		{21820CF0-1546-48C8-BFA6-FC195194F90B}.Release|x64.Build.0 = Release|x64
+		{21820CF0-1546-48C8-BFA6-FC195194F90B}.Release|x86.ActiveCfg = Release|Win32
+		{21820CF0-1546-48C8-BFA6-FC195194F90B}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -916,6 +926,7 @@ Global
 		{9C407858-B178-4DF6-B6FA-9BFD28741A50} = {78CD2893-5F2F-46EB-AD26-B441A1EEF36E}
 		{CCC2DFBC-9735-4A0E-8339-C9E4F09AA07B} = {F5849D11-D41B-4208-91E9-5B99F4ABED19}
 		{32E774AD-183C-40E6-82FD-528C02B8B100} = {78CD2893-5F2F-46EB-AD26-B441A1EEF36E}
+		{21820CF0-1546-48C8-BFA6-FC195194F90B} = {F5849D11-D41B-4208-91E9-5B99F4ABED19}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1B46ABCB-2337-4B76-AC80-FB005083CB16}
