@@ -211,6 +211,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "leetcode106-BuildTree", "le
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "leetcode21-MergeTwoLists", "leetcode21-MergeTwoLists\leetcode21-MergeTwoLists.vcxproj", "{3ECA9CBD-8122-4FA3-9B08-9AD46E94DE7D}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "leetcode199-RightSideView", "leetcode199-RightSideView\leetcode199-RightSideView.vcxproj", "{B960CAAF-2CB0-407F-B7CF-50A52AB9BABE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -923,6 +925,14 @@ Global
 		{3ECA9CBD-8122-4FA3-9B08-9AD46E94DE7D}.Release|x64.Build.0 = Release|x64
 		{3ECA9CBD-8122-4FA3-9B08-9AD46E94DE7D}.Release|x86.ActiveCfg = Release|Win32
 		{3ECA9CBD-8122-4FA3-9B08-9AD46E94DE7D}.Release|x86.Build.0 = Release|Win32
+		{B960CAAF-2CB0-407F-B7CF-50A52AB9BABE}.Debug|x64.ActiveCfg = Debug|x64
+		{B960CAAF-2CB0-407F-B7CF-50A52AB9BABE}.Debug|x64.Build.0 = Debug|x64
+		{B960CAAF-2CB0-407F-B7CF-50A52AB9BABE}.Debug|x86.ActiveCfg = Debug|Win32
+		{B960CAAF-2CB0-407F-B7CF-50A52AB9BABE}.Debug|x86.Build.0 = Debug|Win32
+		{B960CAAF-2CB0-407F-B7CF-50A52AB9BABE}.Release|x64.ActiveCfg = Release|x64
+		{B960CAAF-2CB0-407F-B7CF-50A52AB9BABE}.Release|x64.Build.0 = Release|x64
+		{B960CAAF-2CB0-407F-B7CF-50A52AB9BABE}.Release|x86.ActiveCfg = Release|Win32
+		{B960CAAF-2CB0-407F-B7CF-50A52AB9BABE}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1015,6 +1025,7 @@ Global
 		{E3159176-0BFC-4055-8C63-C8C0370E4C25} = {C67021A7-EEC6-4E5C-B0C1-2D3A8EE9ECA5}
 		{EB673E03-12EE-4ED3-85D8-8637ECB44F14} = {F5849D11-D41B-4208-91E9-5B99F4ABED19}
 		{3ECA9CBD-8122-4FA3-9B08-9AD46E94DE7D} = {AE52A779-C165-4FD8-9BDA-EF49D37E5B1F}
+		{B960CAAF-2CB0-407F-B7CF-50A52AB9BABE} = {070F8060-C353-48C6-916A-565807F251B5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1B46ABCB-2337-4B76-AC80-FB005083CB16}
