@@ -9,6 +9,9 @@ using namespace std;
 		2 3 2 1
 		3 null 2 2  使用中序就有问题。。。。
 
+
+	update:2020-10-10 12:14:43  递归是个好东西。
+
 */
 
 struct TreeNode {
@@ -23,6 +26,8 @@ class Solution
 public:
 	bool isSubStructure(TreeNode* A, TreeNode* B);
 
+	bool isSameTree(TreeNode* pTreeNode1, TreeNode* pTreeNode2);
+
 
 };
 
@@ -30,22 +35,14 @@ int main()
 {
 
 	Solution s;
-	TreeNode* pRoot = new TreeNode(2);
-	TreeNode* pL10 = new TreeNode(3);
-	TreeNode* pL11 = new TreeNode(2);
-	TreeNode* pL23 = new TreeNode(1);
-	//TreeNode* pL24 = new TreeNode(7);
+	TreeNode* pRoot = new TreeNode(3);
+	pRoot->left = new TreeNode(4);
+	pRoot->right = new TreeNode(5);
+	pRoot->left->left = new TreeNode(1);
+	pRoot->left->right = new TreeNode(2);
 
-	pRoot->left = pL10;
-	pRoot->right = pL11;
-	pL10->left = pL23;
-
-
-	TreeNode* pRootB = new TreeNode(3);
-	TreeNode* pRooBL10 = new TreeNode(2);
-	TreeNode* pRooBL20 = new TreeNode(2);
-	pRootB->right = pRooBL10;
-	pRooBL10->left = pRooBL20;
+	TreeNode* pRootB = new TreeNode(4);
+	pRootB->left = new TreeNode(1);
 
 	cout << s.isSubStructure(pRoot, pRootB);
 
@@ -54,9 +51,59 @@ int main()
 
 bool Solution::isSubStructure(TreeNode* A, TreeNode* B)
 {
-	 
+	if (A == nullptr || B == nullptr)
+		return false;
+
+	stack<TreeNode*> treeNodeStack;
+	TreeNode* pCurrent = A;
+
+	while (!treeNodeStack.empty() || pCurrent != nullptr)
+	{
+		while (pCurrent != nullptr)
+		{
+			bool isSubTree = false;
+			if (pCurrent->val == B->val)
+				isSubTree = isSameTree(pCurrent, B);
+
+			if (isSubTree)
+				return true;
+
+			treeNodeStack.push(pCurrent);
+			pCurrent = pCurrent->left;
+		}
+
+		pCurrent = treeNodeStack.top();
+		treeNodeStack.pop();
+
+		pCurrent = pCurrent->right;
+	}
+
+	return false;
+}
+
+bool Solution::isSameTree(TreeNode* pTreeNode1, TreeNode* pTreeNode2)
+{
+	if (pTreeNode1->val != pTreeNode2->val)
+		return false;
+
+	bool isSameSubTree = true;
+	if (pTreeNode2->left != nullptr)
+	{
+		if (pTreeNode1->left == nullptr)
+			return false;
+
+		isSameSubTree &= isSameTree(pTreeNode1->left, pTreeNode2->left);
+	}
+
+	if (pTreeNode2->right != nullptr)
+	{
+		if (pTreeNode1->right == nullptr)
+			return false;
+
+		isSameSubTree &= isSameTree(pTreeNode1->right, pTreeNode2->right);
+	}
+
+	return isSameSubTree;
 }
 
 
-
- 
