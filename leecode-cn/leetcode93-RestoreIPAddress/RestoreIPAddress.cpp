@@ -45,7 +45,7 @@ vector<string> Solution::restoreIpAddress(string s)
 	if (s.size() == 0)
 		return vecAnswer;
 
-	string strIPAddress = "101023";
+	string strIPAddress = "";
 	backTrace(s, 0, 0, strIPAddress, vecAnswer);
 
 	return vecAnswer;
@@ -53,12 +53,18 @@ vector<string> Solution::restoreIpAddress(string s)
 
 void Solution::backTrace(string strSource, int indexFrom, int ipDepth, string& strIp, vector<string>& answerVec)
 {
-	if (ipDepth == 3 && indexFrom == strSource.size() - 1)
+	//由于是在下一次递归里确定结果，这里indexFrom 和 ipDepth都超前一个
+	if (ipDepth == 4 && indexFrom == strSource.size())
 	{
 		string strAnswer = strIp.substr(0, strIp.size() - 1);		//使用substr实际是字符串拷贝
 		answerVec.push_back(strAnswer);
 		return;
 	}
+
+	//2 5 5 2552550  位数的问题，一共最多3 * 4 = 12位，当前depth剩下的位数的问题
+	int maxStrSize = (4 - ipDepth) * 3;
+	if (strSource.size() - indexFrom > maxStrSize)
+		return;
 
 	//各种剪枝
 	for (int i = 0; i < 3; ++i)
@@ -79,13 +85,11 @@ void Solution::backTrace(string strSource, int indexFrom, int ipDepth, string& s
 			strIp.push_back('.');
 
 			//下一层递归
-			backTrace(strSource, indexFrom + i + 1, ipDepth++, strIp, answerVec);
+			backTrace(strSource, indexFrom + i + 1, ipDepth + 1, strIp, answerVec);
 
 			//将本次结果移除（拷贝出来，） 本质递归就是对栈的模拟 ,
 			strIp = strIp.substr(0, strIp.size() - depthOfIP.size() - 1);		//相当于strIp是本次迭代初的（退回到上一层）
 		}
 	}
-
-
 }
 
