@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{026c0257-bf35-4262-a0da-316790fe9d8b}</ProjectGuid>
-    <RootNamespace>leetcode344ReverseString</RootNamespace>
+    <ProjectGuid>{3c8b11b0-bf5c-4eef-b202-b7552a6945f4}</ProjectGuid>
+    <RootNamespace>Offer56SingleNumberII</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -139,7 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="ReverseString.cpp" />
+    <ClCompile Include="SingleNumberII.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
