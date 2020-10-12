@@ -19,12 +19,20 @@ using namespace std;
 			dp[i][j][k] = dp[i-1][j][k]												当前的j,k对结果没影响 和之前一样
 						  dp[i-1][j-当前字符串中0的数量][k-当前字符串中1的数量] +1		选择当前的，结果为  不包含当前的数量 + 1 （0-1背包的变形）
 
+
+		optimize:	
+			只和i-1有关 所以可优化空间到dp[i][j]二维 使用上一次就行
+
 */
 
 class Solution
 {
 public:
 	int FindMaxForm(vector<string>& strs, int m, int n);
+
+	int FindMaxFormOptimize1(vector<vector<string>>& strs, int m, int n);
+
+	int FindMaxFormOptimize2(vector<vector<string>>& strs, int m, int n);
 
 	pair<int, int> GetStrZeroOneCount(string strs, pair<int, int>& pairResult);
 };
