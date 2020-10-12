@@ -239,6 +239,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "leetcode530-GetMinimumDiffe
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Offer54-KthLargest", "Offer54-KthLargest\Offer54-KthLargest.vcxproj", "{7B001CFA-1DB8-4B3F-B6BB-0C4753AB8288}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "leetcode474-FindMaxForm", "leetcode474-FindMaxForm\leetcode474-FindMaxForm.vcxproj", "{8E144DF0-D687-4CA8-8850-1286C0EDB1D9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -1063,6 +1065,14 @@ Global
 		{7B001CFA-1DB8-4B3F-B6BB-0C4753AB8288}.Release|x64.Build.0 = Release|x64
 		{7B001CFA-1DB8-4B3F-B6BB-0C4753AB8288}.Release|x86.ActiveCfg = Release|Win32
 		{7B001CFA-1DB8-4B3F-B6BB-0C4753AB8288}.Release|x86.Build.0 = Release|Win32
+		{8E144DF0-D687-4CA8-8850-1286C0EDB1D9}.Debug|x64.ActiveCfg = Debug|x64
+		{8E144DF0-D687-4CA8-8850-1286C0EDB1D9}.Debug|x64.Build.0 = Debug|x64
+		{8E144DF0-D687-4CA8-8850-1286C0EDB1D9}.Debug|x86.ActiveCfg = Debug|Win32
+		{8E144DF0-D687-4CA8-8850-1286C0EDB1D9}.Debug|x86.Build.0 = Debug|Win32
+		{8E144DF0-D687-4CA8-8850-1286C0EDB1D9}.Release|x64.ActiveCfg = Release|x64
+		{8E144DF0-D687-4CA8-8850-1286C0EDB1D9}.Release|x64.Build.0 = Release|x64
+		{8E144DF0-D687-4CA8-8850-1286C0EDB1D9}.Release|x86.ActiveCfg = Release|Win32
+		{8E144DF0-D687-4CA8-8850-1286C0EDB1D9}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1169,6 +1179,7 @@ Global
 		{ECF77E70-1756-457D-B170-C30F4BAD16BB} = {F5849D11-D41B-4208-91E9-5B99F4ABED19}
 		{88999BA3-B6D7-4B7C-9AE0-A1740A0B89BD} = {AE52A779-C165-4FD8-9BDA-EF49D37E5B1F}
 		{7B001CFA-1DB8-4B3F-B6BB-0C4753AB8288} = {AE52A779-C165-4FD8-9BDA-EF49D37E5B1F}
+		{8E144DF0-D687-4CA8-8850-1286C0EDB1D9} = {D56C4C75-9DE6-499D-9B4F-5618F91A0FFF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1B46ABCB-2337-4B76-AC80-FB005083CB16}
