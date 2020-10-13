@@ -20,7 +20,7 @@ using namespace std;
 						  dp[i-1][j-当前字符串中0的数量][k-当前字符串中1的数量] +1		选择当前的，结果为  不包含当前的数量 + 1 （0-1背包的变形）
 
 
-		optimize:	
+		optimize:
 			只和i-1有关 所以可优化空间到dp[i][j]二维 使用上一次就行
 
 */
@@ -30,9 +30,15 @@ class Solution
 public:
 	int FindMaxForm(vector<string>& strs, int m, int n);
 
-	int FindMaxFormOptimize1(vector<vector<string>>& strs, int m, int n);
+	/*
+		优化空间 使用二维代替三维dp ，
+	*/
+	int FindMaxFormOptimize1(vector<string>& strs, int m, int n);
 
-	int FindMaxFormOptimize2(vector<vector<string>>& strs, int m, int n);
+	/*
+		进一步优化循环，
+	*/
+	int FindMaxFormOptimize2(vector<string>& strs, int m, int n);
 
 	pair<int, int> GetStrZeroOneCount(string strs, pair<int, int>& pairResult);
 };
@@ -44,7 +50,7 @@ int main()
 	int n = 3;
 
 	Solution s;
-	int maxForm = s.FindMaxForm(strs, m, n);
+	int maxForm = s.FindMaxFormOptimize2(strs, m, n);
 
 	cout << maxForm;
 
@@ -78,6 +84,38 @@ int Solution::FindMaxForm(vector<string>& strs, int m, int n)
 	}
 
 	return dp[strs.size()][m][n];
+}
+
+int Solution::FindMaxFormOptimize1(vector<string>& strs, int m, int n)
+{
+	vector<vector<int>> dp(m + 1, vector<int>(n + 1));
+
+	for (string str : strs)
+	{
+		pair<int, int> strZeroOneInfo;
+		strZeroOneInfo = GetStrZeroOneCount(str, strZeroOneInfo);
+
+		for (int i = m; i >= 0; --i)
+		{
+			for (int j = n; j >= 0; --j)
+			{
+				//由于原始dp都是0，可以将此步的判断和上面两层for循环合并，优化版见FindMaxFormOptimize2
+				//相比FindMaxForm原始的三维状态转移方程，该方法在Leetcode上 时间由588ms-> 288ms  ，空间复杂度：100.3M -> 9.7M 非常大的优化
+				if (i >= strZeroOneInfo.first && j >= strZeroOneInfo.second)
+				{
+					dp[i][j] = max(dp[i][j], dp[i - strZeroOneInfo.first][j - strZeroOneInfo.second] + 1);
+				}
+			}
+		}
+	}
+
+
+	return dp[m][n];
+}
+
+int Solution::FindMaxFormOptimize2(vector<string>& strs, int m, int n)
+{
+
 }
 
 pair<int, int> Solution::GetStrZeroOneCount(string strs, pair<int, int>& pairResult)
