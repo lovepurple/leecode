@@ -115,7 +115,24 @@ int Solution::FindMaxFormOptimize1(vector<string>& strs, int m, int n)
 
 int Solution::FindMaxFormOptimize2(vector<string>& strs, int m, int n)
 {
+	vector<vector<int>> dp(m + 1, vector<int>(n + 1));
 
+	for (string str : strs)
+	{
+		pair<int, int> strZeroOneInfo;
+		strZeroOneInfo = GetStrZeroOneCount(str, strZeroOneInfo);
+
+		//0或1的数量小于 当前目标串的 不需要计算，
+		for (int i = m; i >= strZeroOneInfo.first; --i)
+		{
+			for (int j = n; j >= strZeroOneInfo.second; --j)
+			{
+				dp[i][j] = max(dp[i][j], dp[i - strZeroOneInfo.first][j - strZeroOneInfo.second] + 1);
+			}
+		}
+	}
+
+	return dp[m][n];
 }
 
 pair<int, int> Solution::GetStrZeroOneCount(string strs, pair<int, int>& pairResult)
