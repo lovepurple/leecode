@@ -38,7 +38,7 @@ ListNode* Solution::swapPairs(ListNode* head)
 	ListNode* pNode1 = head;
 	ListNode* pNode2 = head->next;
 
-	pNode1->next = swapPairs(pNode2->next);
+	pNode1->next = swapPairs(pNode2->next);			//从底向上
 	ListNode* pTempNode = pNode1;
 	pNode2->next = pNode1;
 
