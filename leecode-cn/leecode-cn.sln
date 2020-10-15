@@ -250,6 +250,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "StockProfit", "StockProfit"
 		ReadMe.txt = ReadMe.txt
 	EndProjectSection
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "leetcode18-FourSum", "leetcode18-FourSum\leetcode18-FourSum.vcxproj", "{D728E4E1-6743-4C30-91E7-918C1E2B2EF1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -1098,6 +1100,14 @@ Global
 		{AA343086-85B7-4EFA-BFF9-8CDF2AD54E31}.Release|x64.Build.0 = Release|x64
 		{AA343086-85B7-4EFA-BFF9-8CDF2AD54E31}.Release|x86.ActiveCfg = Release|Win32
 		{AA343086-85B7-4EFA-BFF9-8CDF2AD54E31}.Release|x86.Build.0 = Release|Win32
+		{D728E4E1-6743-4C30-91E7-918C1E2B2EF1}.Debug|x64.ActiveCfg = Debug|x64
+		{D728E4E1-6743-4C30-91E7-918C1E2B2EF1}.Debug|x64.Build.0 = Debug|x64
+		{D728E4E1-6743-4C30-91E7-918C1E2B2EF1}.Debug|x86.ActiveCfg = Debug|Win32
+		{D728E4E1-6743-4C30-91E7-918C1E2B2EF1}.Debug|x86.Build.0 = Debug|Win32
+		{D728E4E1-6743-4C30-91E7-918C1E2B2EF1}.Release|x64.ActiveCfg = Release|x64
+		{D728E4E1-6743-4C30-91E7-918C1E2B2EF1}.Release|x64.Build.0 = Release|x64
+		{D728E4E1-6743-4C30-91E7-918C1E2B2EF1}.Release|x86.ActiveCfg = Release|Win32
+		{D728E4E1-6743-4C30-91E7-918C1E2B2EF1}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1208,6 +1218,7 @@ Global
 		{3898566D-1808-405B-876D-28E7C041E3AA} = {D56C4C75-9DE6-499D-9B4F-5618F91A0FFF}
 		{AA343086-85B7-4EFA-BFF9-8CDF2AD54E31} = {78CD2893-5F2F-46EB-AD26-B441A1EEF36E}
 		{3F5C2790-AB3C-433B-90FC-4E6E796633C6} = {D56C4C75-9DE6-499D-9B4F-5618F91A0FFF}
+		{D728E4E1-6743-4C30-91E7-918C1E2B2EF1} = {F5849D11-D41B-4208-91E9-5B99F4ABED19}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1B46ABCB-2337-4B76-AC80-FB005083CB16}
