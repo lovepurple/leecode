@@ -16,6 +16,13 @@ public:
 	/// <param name="prices"></param>
 	/// <returns></returns>
 	int maxProfitOptimize(vector<int>& prices);
+
+	/// <summary>
+	/// 2020-10-15 18:36:36
+	/// </summary>
+	/// <param name="prices"></param>
+	/// <returns></returns>
+	int maxProfitDP(vector<int>& prices);
 };
 
 Solution::Solution()
@@ -54,11 +61,36 @@ int Solution::maxProfitOptimize(vector<int>& prices)
 	return 0;
 }
 
+int Solution::maxProfitDP(vector<int>& prices)
+{
+	/*
+		dp[i]为前i 天最大的利润
+
+		dp[i] = max(dp[i-1],price[i] - minpriceBuy)
+	*/
+
+	if (prices.size() == 0)
+		return 0;
+
+	int minBuyPrice = INT_MAX;
+	vector<int> dp(prices.size() + 1);
+	dp[0] = 0;
+
+	for (int i = 1; i <= prices.size(); ++i)
+	{
+		dp[i] = max(dp[i - 1], prices[i - 1] - minBuyPrice);
+		minBuyPrice = min(minBuyPrice, prices[i - 1]);
+	}
+
+
+	return dp[prices.size()];
+}
+
 int main()
 {
-	vector<int> prices = { 1,2 };
+	vector<int> prices = { 7,1,5,3,6,4 };
 	Solution solution;
-	cout << solution.maxProfit(prices);
+	cout << solution.maxProfitDP(prices);
 
 	return 0;
 }
