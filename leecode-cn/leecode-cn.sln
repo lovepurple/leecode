@@ -254,6 +254,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "leetcode18-FourSum", "leetc
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "leetcode977-SortedSquares", "leetcode977-SortedSquares\leetcode977-SortedSquares.vcxproj", "{B43F4BAD-EC35-439C-82C5-0E96663B5DA9}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Offer4-MaxValue", "Offer4-MaxValue\Offer4-MaxValue.vcxproj", "{8E3565B7-559D-494D-9976-5323E7F9457C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -1118,6 +1120,14 @@ Global
 		{B43F4BAD-EC35-439C-82C5-0E96663B5DA9}.Release|x64.Build.0 = Release|x64
 		{B43F4BAD-EC35-439C-82C5-0E96663B5DA9}.Release|x86.ActiveCfg = Release|Win32
 		{B43F4BAD-EC35-439C-82C5-0E96663B5DA9}.Release|x86.Build.0 = Release|Win32
+		{8E3565B7-559D-494D-9976-5323E7F9457C}.Debug|x64.ActiveCfg = Debug|x64
+		{8E3565B7-559D-494D-9976-5323E7F9457C}.Debug|x64.Build.0 = Debug|x64
+		{8E3565B7-559D-494D-9976-5323E7F9457C}.Debug|x86.ActiveCfg = Debug|Win32
+		{8E3565B7-559D-494D-9976-5323E7F9457C}.Debug|x86.Build.0 = Debug|Win32
+		{8E3565B7-559D-494D-9976-5323E7F9457C}.Release|x64.ActiveCfg = Release|x64
+		{8E3565B7-559D-494D-9976-5323E7F9457C}.Release|x64.Build.0 = Release|x64
+		{8E3565B7-559D-494D-9976-5323E7F9457C}.Release|x86.ActiveCfg = Release|Win32
+		{8E3565B7-559D-494D-9976-5323E7F9457C}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1230,6 +1240,7 @@ Global
 		{3F5C2790-AB3C-433B-90FC-4E6E796633C6} = {D56C4C75-9DE6-499D-9B4F-5618F91A0FFF}
 		{D728E4E1-6743-4C30-91E7-918C1E2B2EF1} = {F5849D11-D41B-4208-91E9-5B99F4ABED19}
 		{B43F4BAD-EC35-439C-82C5-0E96663B5DA9} = {164E9F03-0A4B-4266-AFB1-523AA883526A}
+		{8E3565B7-559D-494D-9976-5323E7F9457C} = {D56C4C75-9DE6-499D-9B4F-5618F91A0FFF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1B46ABCB-2337-4B76-AC80-FB005083CB16}
