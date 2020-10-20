@@ -235,6 +235,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "leetcode40-CombinationSum2"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "leetcode39-CombinationSum", "leetcode39-CombinationSum\leetcode39-CombinationSum.vcxproj", "{ECF77E70-1756-457D-B170-C30F4BAD16BB}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "leetcode925-IsLongPressedName", "leetcode925-IsLongPressedName\leetcode925-IsLongPressedName.vcxproj", "{D11C4C8D-A7DD-499C-B022-F687AED0A011}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -1043,6 +1045,14 @@ Global
 		{ECF77E70-1756-457D-B170-C30F4BAD16BB}.Release|x64.Build.0 = Release|x64
 		{ECF77E70-1756-457D-B170-C30F4BAD16BB}.Release|x86.ActiveCfg = Release|Win32
 		{ECF77E70-1756-457D-B170-C30F4BAD16BB}.Release|x86.Build.0 = Release|Win32
+		{D11C4C8D-A7DD-499C-B022-F687AED0A011}.Debug|x64.ActiveCfg = Debug|x64
+		{D11C4C8D-A7DD-499C-B022-F687AED0A011}.Debug|x64.Build.0 = Debug|x64
+		{D11C4C8D-A7DD-499C-B022-F687AED0A011}.Debug|x86.ActiveCfg = Debug|Win32
+		{D11C4C8D-A7DD-499C-B022-F687AED0A011}.Debug|x86.Build.0 = Debug|Win32
+		{D11C4C8D-A7DD-499C-B022-F687AED0A011}.Release|x64.ActiveCfg = Release|x64
+		{D11C4C8D-A7DD-499C-B022-F687AED0A011}.Release|x64.Build.0 = Release|x64
+		{D11C4C8D-A7DD-499C-B022-F687AED0A011}.Release|x86.ActiveCfg = Release|Win32
+		{D11C4C8D-A7DD-499C-B022-F687AED0A011}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1147,6 +1157,7 @@ Global
 		{141BD316-125F-42BE-B097-DBD36FD55DBC} = {78CD2893-5F2F-46EB-AD26-B441A1EEF36E}
 		{CF2DDF21-87C7-491A-8FD0-B9C81E98F959} = {F5849D11-D41B-4208-91E9-5B99F4ABED19}
 		{ECF77E70-1756-457D-B170-C30F4BAD16BB} = {F5849D11-D41B-4208-91E9-5B99F4ABED19}
+		{D11C4C8D-A7DD-499C-B022-F687AED0A011} = {AE52A779-C165-4FD8-9BDA-EF49D37E5B1F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1B46ABCB-2337-4B76-AC80-FB005083CB16}
