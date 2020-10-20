@@ -260,6 +260,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Offer34-PathSum", "Offer34-
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "leetcode844-backspaceCompare", "leetcode844-backspaceCompare\leetcode844-backspaceCompare.vcxproj", "{8E543F27-5A10-48E2-9863-8838037DE977}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "leetcode143-ReorderList", "leetcode143-ReorderList\leetcode143-ReorderList.vcxproj", "{C0763B1A-54FB-4E85-A525-D12DBE2F78FF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -1148,6 +1150,14 @@ Global
 		{8E543F27-5A10-48E2-9863-8838037DE977}.Release|x64.Build.0 = Release|x64
 		{8E543F27-5A10-48E2-9863-8838037DE977}.Release|x86.ActiveCfg = Release|Win32
 		{8E543F27-5A10-48E2-9863-8838037DE977}.Release|x86.Build.0 = Release|Win32
+		{C0763B1A-54FB-4E85-A525-D12DBE2F78FF}.Debug|x64.ActiveCfg = Debug|x64
+		{C0763B1A-54FB-4E85-A525-D12DBE2F78FF}.Debug|x64.Build.0 = Debug|x64
+		{C0763B1A-54FB-4E85-A525-D12DBE2F78FF}.Debug|x86.ActiveCfg = Debug|Win32
+		{C0763B1A-54FB-4E85-A525-D12DBE2F78FF}.Debug|x86.Build.0 = Debug|Win32
+		{C0763B1A-54FB-4E85-A525-D12DBE2F78FF}.Release|x64.ActiveCfg = Release|x64
+		{C0763B1A-54FB-4E85-A525-D12DBE2F78FF}.Release|x64.Build.0 = Release|x64
+		{C0763B1A-54FB-4E85-A525-D12DBE2F78FF}.Release|x86.ActiveCfg = Release|Win32
+		{C0763B1A-54FB-4E85-A525-D12DBE2F78FF}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1263,6 +1273,7 @@ Global
 		{8E3565B7-559D-494D-9976-5323E7F9457C} = {D56C4C75-9DE6-499D-9B4F-5618F91A0FFF}
 		{EBE4CFB9-7631-43BE-A378-8828D57F940C} = {F5849D11-D41B-4208-91E9-5B99F4ABED19}
 		{8E543F27-5A10-48E2-9863-8838037DE977} = {AE52A779-C165-4FD8-9BDA-EF49D37E5B1F}
+		{C0763B1A-54FB-4E85-A525-D12DBE2F78FF} = {F5849D11-D41B-4208-91E9-5B99F4ABED19}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1B46ABCB-2337-4B76-AC80-FB005083CB16}
