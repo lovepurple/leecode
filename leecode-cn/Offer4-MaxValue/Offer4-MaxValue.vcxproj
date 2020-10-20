@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{d9cb6cb6-cef2-4f88-a9b8-8c604bc1575b}</ProjectGuid>
-    <RootNamespace>swapPairs</RootNamespace>
+    <ProjectGuid>{8e3565b7-559d-494d-9976-5323e7f9457c}</ProjectGuid>
+    <RootNamespace>Offer4MaxValue</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -139,7 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="SwapPairs.cpp" />
+    <ClCompile Include="MaxValue.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
