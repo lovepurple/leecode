@@ -161,7 +161,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LongestCommonSubstring", "L
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FindKth", "FindKth\FindKth.vcxproj", "{0C498289-450B-4CDB-B75E-761EF92602E7}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NewFolder1", "NewFolder1", "{2A476441-E4E7-48CE-A75E-77D4756532AC}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SlidingWindow", "SlidingWindow", "{2A476441-E4E7-48CE-A75E-77D4756532AC}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ReverseKGroup", "ReverseKGroup\ReverseKGroup.vcxproj", "{53B2D76A-2C2C-4F52-BC23-4203772E530E}"
 EndProject
@@ -279,6 +279,8 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "leetcode249-Intersection", "leetcode249-Intersection\leetcode249-Intersection.vcxproj", "{6ED98009-43E2-4999-9702-0D8535DFEFF3}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "leetcode941-ValidmountainArray", "leetcode941-ValidmountainArray\leetcode941-ValidmountainArray.vcxproj", "{509B605D-CC21-403B-ABFD-5FB9BBBC635C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "leetcode1052-MaxSatisfied", "MaxSatisfied\MaxSatisfied.vcxproj", "{37C47F77-197A-4985-A1BD-F9C588A85FF3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -1248,6 +1250,14 @@ Global
 		{509B605D-CC21-403B-ABFD-5FB9BBBC635C}.Release|x64.Build.0 = Release|x64
 		{509B605D-CC21-403B-ABFD-5FB9BBBC635C}.Release|x86.ActiveCfg = Release|Win32
 		{509B605D-CC21-403B-ABFD-5FB9BBBC635C}.Release|x86.Build.0 = Release|Win32
+		{37C47F77-197A-4985-A1BD-F9C588A85FF3}.Debug|x64.ActiveCfg = Debug|x64
+		{37C47F77-197A-4985-A1BD-F9C588A85FF3}.Debug|x64.Build.0 = Debug|x64
+		{37C47F77-197A-4985-A1BD-F9C588A85FF3}.Debug|x86.ActiveCfg = Debug|Win32
+		{37C47F77-197A-4985-A1BD-F9C588A85FF3}.Debug|x86.Build.0 = Debug|Win32
+		{37C47F77-197A-4985-A1BD-F9C588A85FF3}.Release|x64.ActiveCfg = Release|x64
+		{37C47F77-197A-4985-A1BD-F9C588A85FF3}.Release|x64.Build.0 = Release|x64
+		{37C47F77-197A-4985-A1BD-F9C588A85FF3}.Release|x86.ActiveCfg = Release|Win32
+		{37C47F77-197A-4985-A1BD-F9C588A85FF3}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1373,6 +1383,7 @@ Global
 		{6F227850-05F1-47C9-972B-D8236D1E5216} = {F5849D11-D41B-4208-91E9-5B99F4ABED19}
 		{6ED98009-43E2-4999-9702-0D8535DFEFF3} = {AE52A779-C165-4FD8-9BDA-EF49D37E5B1F}
 		{509B605D-CC21-403B-ABFD-5FB9BBBC635C} = {AE52A779-C165-4FD8-9BDA-EF49D37E5B1F}
+		{37C47F77-197A-4985-A1BD-F9C588A85FF3} = {2A476441-E4E7-48CE-A75E-77D4756532AC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1B46ABCB-2337-4B76-AC80-FB005083CB16}
